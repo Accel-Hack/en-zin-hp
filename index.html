@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>en-zin</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 <div class="wrapper">
-    <header class="header" id="top">
+    <header class="header">
         <div class="header__wrapper">
             <div class="header__inner">
                 <div class="header__logo">
                     <h1 class="header__logo-item">
                         <a class="header__logo-link" href="#top">
-                            <!--
                             <img class="header__logo-img" src="./img/logo-w.png" alt="ヘッダーロゴ">
-                            -->
-                            <img class="header__logo-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAYoEy2t4I0FGfZlGlu-UL6L7CTkM9uAj8kmRRM2tiucASh0FEKbcxZmu-dQcTQnSeOQmKkkcTIa2Q_xvwVjMrd3FCaEs-JFLCeRokabLMi_TBatIzTRrFg-_jrKON-x8FhLnlXaCTIuhYwd2ey6yvcoDy4ByuqEE2ChiITWclZBiG3b1jrYV2f4fWcg/s400/money_tokyo_syouken_torihiki2.png" alt="">
                         </a>
                     </h1>
                 </div>
@@ -45,20 +43,11 @@
     <main class="main">
         <div class="main__inner">
             <div class="main__wrapper">
-                <section class="index-kv__container">
+                <section class="index-kv__container parallax" id="top">
                     <div class="index-kv">
                         <div class="index-kv__inner">
-                            <div class="index-kv__imgArea">
-                                <!--
-                                <img class="index-kv__imgArea-img" src="./img/en_3D.png" alt="ロゴ 3D">
-                                -->
-                                <img class="index-kv__imgArea-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEht9E4bWQYEfkp6yjZgThtZbPJdwQ0baA5W_kRz8ZsSWnkue67yBT5Fr2eZEXpVC6ijChrgegGHbAaPk0-dehGoQqN4ChqUYijP5KvNa5DNHRsBKHCvM8rV8OAmbUchjd21HVlQ-xG0AhM/s400/building_biyouin.png" alt="ロゴ 3D">
-                                <div class="index-kv__imgArea-txt-area">
-                                    <h2 class="index-kv__imgArea-txt">
-                                        en-zin
-                                    </h2>
-                                </div>
-                            </div>
+                            <img class="index-kv__img1" src="./img/en_3D.png" alt="ロゴ 3D">
+                            <img class="index-kv__img2" src="./img/logo_text.svg" alt="ロゴ テキスト">
                             <div class="index-kv__txtArea">
                                 <div class="index-kv__txtArea-sbttl-area">
                                     <h4 class="index-kv__txtArea-sbttl">
@@ -76,19 +65,19 @@
                         </div>
                     </div>
                 </section>
-                <section class="index-about__container" id="about">
+                <section class="index-about__container parallax" id="about">
                     <div class="index-about">
                         <div class="index-about__inner">
-                            <div class="index-about__txt-area">
-                                <h2 class="index-about__txt">
-                                    join ████
-                                </h2>
+                            <h2 class="index-about__txt">
+                                join
+                            </h2>
+                            <div class="index-about__box">
                             </div>
                             <div class="index-about__txtArea">
                                 <div class="index-about__txtArea-ttl-area">
-                                    <h4 class="index-about__txtArea-ttl">
+                                    <h3 class="index-about__txtArea-ttl">
                                         about
-                                    </h4>
+                                    </h3>
                                 </div>
                                 <div class="index-about__txtArea-sbttl-area">
                                     <h4 class="index-about__txtArea-sbttl">
@@ -106,9 +95,9 @@
                         </div>
                     </div>
                 </section>
-                <section class="index-work__container" id="work"></section>
-                <section class="index-access__container" id="access"></section>
-                <section class="index-contact__container" id="contact"></section>
+                <section class="index-work__container parallax" id="work"></section>
+                <section class="index-access__container parallax" id="access"></section>
+                <section class="index-contact__container parallax" id="contact"></section>
             </div>
         </div>
     </main>
