@@ -1,7 +1,6 @@
 :root {
     --base-width: 1366; /* デザインの基準幅 */
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 .parallax {
