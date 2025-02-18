@@ -549,3 +549,254 @@ work
         font-size: 9px;
     }
 }
+/*
+access
+ */
+.index-access__img{
+    width: 634px;
+    height: 513px;
+    position: absolute;
+    top: 7px;
+    right: 0;
+    bottom: 0;
+    left: 418px;
+    margin: auto;
+}
+
+.index-access__txtArea {
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+}
+
+.index-access__txtArea-ttl1 {
+    font-family: "Helvetica Light", sans-serif;
+    font-weight: 100;
+    font-size: 36px;
+    padding-bottom: 15px;
+}
+
+.index-access__txtArea-CoName {
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+.index-access__txtArea-CoAdd {
+    font-size: 14px;
+    padding-bottom: 15px;
+}
+
+.index-access__txtArea-CoGMap {
+    width: 118px;  /* 長方形の横幅 */
+    height: 15.42px;  /* 長方形の縦幅 */
+    border: 1px solid white; /* 白色の枠線 */
+    border-radius: 7.71px; /* 縦の半分を指定して左右を半円に */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:9px;
+    margin-bottom: 30.58px;
+}
+
+.index-access__txtArea-CoTraInfo {
+    font-size: 12px;
+    padding-bottom: 30px;
+}
+
+.index-access__txtArea-ttl2 {
+    font-family: "Helvetica Light", sans-serif;
+    font-weight: 100;
+    font-size: 36px;
+    padding-bottom: 20px;
+}
+
+.index-access__txtArea-GrCoName {
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+.index-access__txtArea-GrCoAdd {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 960px) {
+    .index-access__img{
+        width: 586px;
+        height: 473px;
+        top: 0;
+        right: 4px;
+        bottom: 311px;
+        left: 0;
+    }
+
+    .index-access__txtArea {
+        bottom: 40px;
+        left: 40px;
+    }
+
+    .index-access__txtArea-ttl1 {
+        font-size: 38px;
+        padding-bottom: 20px;
+    }
+
+    .index-access__txtArea-CoName {
+        font-size: 18px;
+        padding-bottom: 7px;
+    }
+
+    .index-access__txtArea-CoAdd {
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+
+    .index-access__txtArea-CoGMap {
+        width: 233.79px;  /* 長方形の横幅 */
+        height: 32.23px;  /* 長方形の縦幅 */
+        border-radius: 16.115px; /* 縦の半分を指定して左右を半円に */
+        font-size:17px;
+        margin-bottom: 19.77px;
+    }
+
+    .index-access__txtArea-CoTraInfo {
+        font-size: 12px;
+        padding-bottom: 43px;
+    }
+
+    .index-access__txtArea-ttl2 {
+        font-size: 38px;
+        padding-bottom: 20px;
+    }
+
+    .index-access__txtArea-GrCoName {
+        font-size: 18px;
+        padding-bottom: 0;
+    }
+
+    .index-access__txtArea-GrCoAdd {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 649px) {
+    .index-access__img{
+        width: 293px;
+        height: 236.5px;
+        top: 0;
+        right: 2px;
+        bottom: 155.5px;
+        left: 0;
+    }
+
+    .index-access__txtArea {
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .index-access__txtArea-ttl1 {
+        font-size: 19px;
+        padding-bottom: 10px;
+    }
+
+    .index-access__txtArea-CoName {
+        font-size: 9px;
+        padding-bottom: 3.5px;
+    }
+
+    .index-access__txtArea-CoAdd {
+        font-size: 9px;
+        padding-bottom: 10px;
+    }
+
+    .index-access__txtArea-CoGMap {
+        width: 116.895px;  /* 長方形の横幅 */
+        height: 16.115px;  /* 長方形の縦幅 */
+        border-radius: 8.0575px; /* 縦の半分を指定して左右を半円に */
+        font-size: 8.5px;
+        margin-bottom: 9.885px;
+    }
+
+    .index-access__txtArea-CoTraInfo {
+        font-size: 6px;
+        padding-bottom: 21.5px;
+    }
+
+    .index-access__txtArea-ttl2 {
+        font-size: 19px;
+        padding-bottom: 10px;
+    }
+
+    .index-access__txtArea-GrCoName {
+        font-size: 9px;
+        padding-bottom: 0;
+    }
+
+    .index-access__txtArea-GrCoAdd {
+        font-size: 9px;
+    }
+}
+/*
+contact
+.index-work__img{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 28px;
+    right: 0;
+    bottom: 0;
+    left: 482px;
+    margin: auto;
+}
+
+.index-work__txt-area {
+    width: 229px;
+    height: 178px;
+    position: absolute;
+    top: 28px;
+    right: 335px;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.index-work__txt-item1,
+.index-work__txt-item2,
+.index-work__txt-item3,
+.index-work__txt-item4 {
+    font-family: "Helvetica", sans-serif;
+    font-weight: 100;
+    font-size: 32px;
+    opacity: 1;
+}
+
+.index-work__txtArea {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+
+.index-work__txtArea-ttl {
+    font-family: "Helvetica Light", sans-serif;
+    font-weight: 100;
+    font-size: 36px;
+    padding-bottom: 10px;
+}
+
+.index-work__txtArea-sbttl {
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+.index-work__txtArea-txt {
+    font-weight: normal;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 960px) {
+}
+
+@media screen and (max-width: 649px) {
+}
+ */
