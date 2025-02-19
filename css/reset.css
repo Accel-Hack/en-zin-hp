@@ -54,7 +54,7 @@ button {
     border: 0;
     outline: 0;
     font-size: 100%;
-    font-weight: bold;
+    font-weight: normal;
     vertical-align: baseline;
     background: transparent;
 }
@@ -107,14 +107,10 @@ select {
 body {
     /* background: #FFF; */
     color: #FFFFFF;
-    letter-spacing: 0.03em;
-    font-size: 16px;
+    font-size: 12px;
     font-family: "Zen Kaku Gothic new", sans-serif;
-    font-weight: bold;
-    font-feature-settings: "palt";
     overflow-x: hidden;
 }
 body, html {
     height: 100%;
 }
-
