@@ -50,7 +50,7 @@ header
 
 .header__nav-link {
     font-family: "Helvetica", sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 16px;
 }
 
@@ -177,12 +177,13 @@ kv
 
 .index-kv__txtArea-sbttl {
     font-size: 12px;
+    font-weight: bold;
     padding-bottom: 26px;
 }
 
 .index-kv__txtArea-txt {
     font-family: "Helvetica", sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 36px;
 }
 
@@ -267,7 +268,7 @@ about
 
 .index-about__txt {
     font-family: "Helvetica", sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 160px;
     opacity: 1;
     /*
@@ -297,18 +298,18 @@ about
 
 .index-about__txtArea-ttl {
     font-family: "Helvetica", sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 36px;
     padding-bottom: 10px;
 }
 
 .index-about__txtArea-sbttl {
     font-size: 18px;
+    font-weight: bold;
     padding-bottom: 15px;
 }
 
 .index-about__txtArea-txt {
-    font-weight: normal;
     font-size: 12px;
 }
 
@@ -430,7 +431,7 @@ work
 .index-work__txt-item3,
 .index-work__txt-item4 {
     font-family: "Helvetica", sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 32px;
     opacity: 1;
 }
@@ -443,18 +444,18 @@ work
 
 .index-work__txtArea-ttl {
     font-family: "Helvetica Light", sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 36px;
     padding-bottom: 10px;
 }
 
 .index-work__txtArea-sbttl {
     font-size: 18px;
+    font-weight: bold;
     padding-bottom: 15px;
 }
 
 .index-work__txtArea-txt {
-    font-weight: normal;
     font-size: 12px;
 }
 
@@ -571,7 +572,7 @@ access
 
 .index-access__txtArea-ttl1 {
     font-family: "Helvetica Light", sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 36px;
     padding-bottom: 15px;
 }
@@ -594,7 +595,7 @@ access
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size:9px;
+    font-size: 9px;
     margin-bottom: 30.58px;
 }
 
@@ -605,7 +606,7 @@ access
 
 .index-access__txtArea-ttl2 {
     font-family: "Helvetica Light", sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 36px;
     padding-bottom: 20px;
 }
@@ -654,7 +655,7 @@ access
         width: 233.79px;  /* 長方形の横幅 */
         height: 32.23px;  /* 長方形の縦幅 */
         border-radius: 16.115px; /* 縦の半分を指定して左右を半円に */
-        font-size:17px;
+        font-size: 17px;
         margin-bottom: 19.77px;
     }
 
@@ -754,7 +755,7 @@ contact
 
 .index-contact__txt {
     font-family: "Helvetica Light", sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 36px;
 }
 
