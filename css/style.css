@@ -408,7 +408,7 @@ work
     top: 28px;
     right: 0;
     bottom: 0;
-    left: 482px;
+    left: clamp(0px, calc(482 * 100vw / 1366), 482px);
     margin: auto;
 }
 
@@ -560,7 +560,7 @@ access
     top: 7px;
     right: 0;
     bottom: 0;
-    left: 418px;
+    left: clamp(0px, calc(418 * 100vw / 1366), 418px);
     margin: auto;
 }
 
