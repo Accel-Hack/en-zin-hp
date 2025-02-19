@@ -617,6 +617,7 @@ access
 
 .index-access__txtArea-GrCoAdd {
     font-size: 14px;
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 960px) {
