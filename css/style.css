@@ -42,7 +42,7 @@ header
 .header__nav-list {
     display: flex;
     justify-content: space-between;
-    padding: 8px 0 0 0;
+    padding: 14px 0 0 0;
 }
 
 .header__nav-item {
@@ -74,7 +74,7 @@ header
     }
 
     .header__nav-list {
-        padding: 22.44px 0 0 0;
+        padding: 20.94px 0 0 0;
     }
 
     .header__nav-item {
@@ -105,7 +105,7 @@ header
     }
 
     .header__nav-list {
-        padding: 3px 0 0 0;
+        padding: 9.2px 0 0 0;
     }
 
     .header__nav-item {
