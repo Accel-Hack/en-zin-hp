@@ -567,13 +567,13 @@ screen and (max-height: 649px) {
 access
  */
 .index-access__img{
-    width: 634px;
-    height: 513px;
+    width: clamp(0px, calc(634 * 100vw / 1366), 634px);
+    height: clamp(0px, calc(513 * 100vw / 1366), 513px);
     position: absolute;
     top: 7px;
     right: 0;
     bottom: 0;
-    left: clamp(0px, calc(418 * 100vw / 1366), 418px);
+    left: 418px;
     margin: auto;
 }
 
