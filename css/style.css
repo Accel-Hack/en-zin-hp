@@ -793,50 +793,71 @@ screen and (max-height: 649px) {
         font-size: 9px;
     }
 }
+
 /*
 contact
  */
-.index-contact__InqForm-area {
-    height: 390px;
+.index-contact__txt {
+    width: 120px;
+    height: 36px;
     position: absolute;
-    top: 42px;
+    top: 0;
     right: 0;
-    bottom: 0;
+    bottom: 312px;
     left: 0;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.index-contact__txt {
     font-family: "Helvetica Light", sans-serif;
     font-weight: 300;
     font-size: 36px;
 }
 
+.index-contact__txtBox-deco {
+    width: 486px;
+    height: 232px;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: #ffffff;
+    mix-blend-mode: overlay;
+    opacity: 0.91;
+    filter: blur(16px);
+}
+
 .index-contact__txtBox {
     width: 486px;
     height: 232px;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
     background: #ffffff;
     mix-blend-mode: screen;
     opacity: 0.91;
-    margin-top: 19.42px;
 }
 
 .index-contact__sendButton {
-    width: 118px;  /* 長方形の横幅 */
-    height: 15.42px;  /* 長方形の縦幅 */
+    width: 118px; /* 長方形の横幅 */
+    height: 15.42px; /* 長方形の縦幅 */
     border: 1px solid white; /* 白色の枠線 */
     border-radius: 7.71px; /* 縦の半分を指定して左右を半円に */
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 9px;
+    position: absolute;
+    top: 414.58px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
 }
 
-.index-contact__copyright{
+.index-contact__copyright {
     font-size: 9px;
     position: absolute;
     left: 50%;
@@ -845,65 +866,60 @@ contact
 }
 
 @media screen and (orientation: portrait) {
-    .index-contact__InqForm-area {
-        height: 871.23px;
-        top: 0;
-        right: 0;
-        bottom: 48.77px;
-        left: 0;
-    }
-
     .index-contact__txt {
+        width: 127px;
+        height: 38px;
+        bottom: 882px;
         font-size: 38px;
     }
 
+    .index-contact__txtBox-deco,
     .index-contact__txtBox {
         width: 400px;
         height: 660px;
-        margin-bottom: 1px;
+        top: 0;
+        bottom: 46px;
     }
 
     .index-contact__sendButton {
-        width: 233.79px;  /* 長方形の横幅 */
-        height: 32.23px;  /* 長方形の縦幅 */
+        width: 233.79px; /* 長方形の横幅 */
+        height: 32.23px; /* 長方形の縦幅 */
         border-radius: 16.115px; /* 縦の半分を指定して左右を半円に */
         font-size: 17px;
+        top: 788.23px;
     }
 
-    .index-contact__copyright{
+    .index-contact__copyright {
         font-size: 12px;
         bottom: 40px;
     }
 }
 
-@media screen and (max-width: 649px),
-screen and (max-height: 649px) {
-    .index-contact__InqForm-area {
-        height: 435.615px;
-        top: 0;
-        right: 0;
-        bottom: 24.385px;
-        left: 0;
-    }
-
+@media screen and (max-width: 649px), screen and (max-height: 649px) {
     .index-contact__txt {
+        width: 63.5px;
+        height: 19px;
+        bottom: 441px;
         font-size: 19px;
     }
 
+    .index-contact__txtBox-deco,
     .index-contact__txtBox {
         width: 200px;
         height: 330px;
-        margin-bottom: 0.5px;
+        top: 0;
+        bottom: 23px;
     }
 
     .index-contact__sendButton {
-        width: 116.895px;  /* 長方形の横幅 */
-        height: 16.115px;  /* 長方形の縦幅 */
+        width: 116.895px; /* 長方形の横幅 */
+        height: 16.115px; /* 長方形の縦幅 */
         border-radius: 8.0575px; /* 縦の半分を指定して左右を半円に */
         font-size: 8.5px;
+        top: 394.115px;
     }
 
-    .index-contact__copyright{
+    .index-contact__copyright {
         font-size: 6px;
         bottom: 20px;
     }
