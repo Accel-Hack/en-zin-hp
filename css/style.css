@@ -45,6 +45,7 @@
     height: 100%;
     position: relative;
 }
+
 /*
 header
  */
@@ -120,8 +121,7 @@ header
     }
 }
 
-@media screen and (max-width: 649px),
-screen and (max-height: 649px) {
+@media screen and (max-width: 649px), screen and (max-height: 649px) {
     .header {
         height: 75px;
     }
@@ -606,10 +606,11 @@ work
         font-size: 9px;
     }
 }
+
 /*
 access
  */
-.index-access__img{
+.index-access__img {
     width: clamp(0px, calc(634 * 100vw / 1366), 634px);
     height: clamp(0px, calc(513 * 100vw / 1366), 513px);
     position: absolute;
@@ -644,8 +645,8 @@ access
 }
 
 .index-access__txtArea-CoGMap {
-    width: 118px;  /* 長方形の横幅 */
-    height: 15.42px;  /* 長方形の縦幅 */
+    width: 118px; /* 長方形の横幅 */
+    height: 15.42px; /* 長方形の縦幅 */
     border: 1px solid white; /* 白色の枠線 */
     border-radius: 7.71px; /* 縦の半分を指定して左右を半円に */
     display: flex;
@@ -678,7 +679,7 @@ access
 }
 
 @media screen and (orientation: portrait) {
-    .index-access__img{
+    .index-access__img {
         width: 586px;
         height: 473px;
         top: 0;
@@ -708,8 +709,8 @@ access
     }
 
     .index-access__txtArea-CoGMap {
-        width: 233.79px;  /* 長方形の横幅 */
-        height: 32.23px;  /* 長方形の縦幅 */
+        width: 233.79px; /* 長方形の横幅 */
+        height: 32.23px; /* 長方形の縦幅 */
         border-radius: 16.115px; /* 縦の半分を指定して左右を半円に */
         font-size: 17px;
         margin-bottom: 19.77px;
@@ -735,9 +736,8 @@ access
     }
 }
 
-@media screen and (max-width: 649px),
-screen and (max-height: 649px) {
-    .index-access__img{
+@media screen and (max-width: 649px), screen and (max-height: 649px) {
+    .index-access__img {
         width: 293px;
         height: 236.5px;
         top: 0;
@@ -767,8 +767,8 @@ screen and (max-height: 649px) {
     }
 
     .index-access__txtArea-CoGMap {
-        width: 116.895px;  /* 長方形の横幅 */
-        height: 16.115px;  /* 長方形の縦幅 */
+        width: 116.895px; /* 長方形の横幅 */
+        height: 16.115px; /* 長方形の縦幅 */
         border-radius: 8.0575px; /* 縦の半分を指定して左右を半円に */
         font-size: 8.5px;
         margin-bottom: 9.885px;
