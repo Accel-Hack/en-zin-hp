@@ -6,6 +6,30 @@
     <title>en-zin</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    // EmailJSを読み込む
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    // EmailJSを初期化する
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('veK33EMY2XA343et5');
+        })();
+    </script>
+    // submitされたらメール送信
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('service_xxpcvjp', 'template_3ll45wi', this)
+                    .then(function () {
+                        console.log('SUCCESS!');
+                    }, function (error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 <body>
 <div class="wrapper">
@@ -204,11 +228,22 @@
                             <h2 class="index-contact__txt">
                                 contact
                             </h2>
-                            <div class="index-contact__txtBox-deco"></div>
-                            <div class="index-contact__txtBox"></div>
-                            <div class="index-contact__sendButton">
-                                send
-                            </div>
+                            <form class="index-contact__form" id="contact-form">
+                                <input type="hidden" name="contact_number">
+                                <label class="index-contact__form-name">お名前<br><input type="text" name="name"
+                                                                                         required></label>
+                                <label class="index-contact__form-furigana">お名前(フリガナ)<br><input type="text"
+                                                                                               name="furigana"
+                                                                                               required></label>
+                                <label class="index-contact__form-email">メールアドレス<br><input type="email"
+                                                                                          name="email"
+                                                                                          required></label>
+                                <label class="index-contact__form-company">会社名<br><input type="text"
+                                                                                            name="company"></label>
+                                <label class="index-contact__form-massage">お問い合わせ内容<br><textarea name="message"
+                                                                                                     required></textarea></label>
+                                <button type="submit" class="index-contact__form-button">send</button>
+                            </form>
                             <div class="index-contact__copyright">
                                 ©en-zin Inc. copyright
                             </div>
