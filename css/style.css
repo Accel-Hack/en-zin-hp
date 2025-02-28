@@ -211,12 +211,14 @@ kv
 .index-kv__txtArea-sbttl {
     font-size: 12px;
     font-weight: bold;
+    line-height: 17px;
 }
 
 .index-kv__txtArea-txt {
     font-family: "Helvetica", sans-serif;
     font-weight: 300;
     font-size: 36px;
+    line-height: calc(76px / 2);
 }
 
 @media screen and (orientation: portrait) {
@@ -255,10 +257,12 @@ kv
 
     .index-kv__txtArea-sbttl {
         font-size: 24px;
+        line-height: 35px;
     }
 
     .index-kv__txtArea-txt {
         font-size: 38px;
+        line-height: calc(82px / 2);
     }
 }
 
@@ -300,10 +304,12 @@ kv
 
     .index-kv__txtArea-sbttl {
         font-size: 12px;
+        line-height: 17.5px;
     }
 
     .index-kv__txtArea-txt {
         font-size: 19px;
+        line-height: calc(41px / 2);
     }
 }
 
@@ -373,13 +379,14 @@ about
 }
 
 .index-about__txtArea-ttl-area {
-    margin-bottom: 10px;
+    margin-bottom: calc(10px + 4px);
 }
 
 .index-about__txtArea-ttl {
     font-family: "Helvetica", sans-serif;
     font-weight: 300;
     font-size: 36px;
+    line-height: 1;
 }
 
 .index-about__txtArea-sbttl-area {
@@ -389,10 +396,12 @@ about
 .index-about__txtArea-sbttl {
     font-size: 18px;
     font-weight: bold;
+    line-height: 26px;
 }
 
 .index-about__txtArea-txt {
     font-size: 12px;
+    line-height: calc(34px / 2);
 }
 
 @media screen and (orientation: portrait) {
@@ -426,7 +435,7 @@ about
     }
 
     .index-about__txtArea-ttl-area {
-        margin-bottom: 5px;
+        margin-bottom: calc(5px + 4px);
     }
 
     .index-about__txtArea-ttl {
@@ -439,10 +448,12 @@ about
 
     .index-about__txtArea-sbttl {
         font-size: 24px;
+        line-height: 35px;
     }
 
     .index-about__txtArea-txt {
         font-size: 18px;
+        line-height: calc(52px / 2);
     }
 }
 
@@ -477,7 +488,7 @@ about
     }
 
     .index-about__txtArea-ttl-area {
-        margin-bottom: 2.5px;
+        margin-bottom: calc(2.5px + 2px);
     }
 
     .index-about__txtArea-ttl {
@@ -490,10 +501,12 @@ about
 
     .index-about__txtArea-sbttl {
         font-size: 12px;
+        line-height: 17.5px;
     }
 
     .index-about__txtArea-txt {
         font-size: 9px;
+        line-height: calc(26px / 2);
     }
 }
 
@@ -555,13 +568,14 @@ work
 }
 
 .index-work__txtArea-ttl-area {
-    margin-bottom: 10px;
+    margin-bottom: calc(10px + 4px);
 }
 
 .index-work__txtArea-ttl {
     font-family: "Helvetica", sans-serif;
     font-weight: 300;
     font-size: 36px;
+    line-height: 1;
 }
 
 .index-work__txtArea-sbttl-area {
@@ -571,10 +585,12 @@ work
 .index-work__txtArea-sbttl {
     font-size: 18px;
     font-weight: bold;
+    line-height: 26px;
 }
 
 .index-work__txtArea-txt {
     font-size: 12px;
+    line-height: calc(34px / 2);
 }
 
 @media screen and (orientation: portrait) {
@@ -607,7 +623,7 @@ work
     }
 
     .index-work__txtArea-ttl-area {
-        margin-bottom: 5px;
+        margin-bottom: calc(5px + 4px);
     }
 
     .index-work__txtArea-ttl {
@@ -620,10 +636,12 @@ work
 
     .index-work__txtArea-sbttl {
         font-size: 24px;
+        line-height: 35px;
     }
 
     .index-work__txtArea-txt {
         font-size: 18px;
+        line-height: calc(52px / 2);
     }
 }
 
@@ -657,7 +675,7 @@ work
     }
 
     .index-work__txtArea-ttl-area {
-        margin-bottom: 2.5px;
+        margin-bottom: calc(2.5px + 2px);
     }
 
     .index-work__txtArea-ttl {
@@ -670,10 +688,12 @@ work
 
     .index-work__txtArea-sbttl {
         font-size: 12px;
+        line-height: 17.5px;
     }
 
     .index-work__txtArea-txt {
         font-size: 9px;
+        line-height: calc(26px / 2);
     }
 }
 
@@ -698,13 +718,14 @@ access
 }
 
 .index-access__txtArea-ttl1-area {
-    margin-bottom: 15px;
+    margin-bottom: calc(15px + 4px);
 }
 
 .index-access__txtArea-ttl1 {
     font-family: "Helvetica", sans-serif;
     font-weight: 300;
     font-size: 36px;
+    line-height: 1;
 }
 
 .index-access__txtArea-CoName-area {
@@ -713,6 +734,7 @@ access
 
 .index-access__txtArea-CoName {
     font-size: 14px;
+    line-height: 20px;
 }
 
 .index-access__txtArea-CoAdd-area {
@@ -721,6 +743,7 @@ access
 
 .index-access__txtArea-CoAdd {
     font-size: 14px;
+    line-height: 20px;
 }
 
 .index-access__txtArea-CoGMap-area {
@@ -744,16 +767,20 @@ access
 
 .index-access__txtArea-CoTraInfo {
     font-size: 12px;
+    line-height: calc(35px / 2);
 }
 
 .index-access__txtArea-ttl2-area {
-    margin-bottom: 20px;
+    /* 基順線から下にはみ出てる分だけ修正 */
+    margin-top: -4px;
+    margin-bottom: calc(20px + 4px);
 }
 
 .index-access__txtArea-ttl2 {
     font-family: "Helvetica", sans-serif;
     font-weight: 300;
     font-size: 36px;
+    line-height: 1;
 }
 
 .index-access__txtArea-GrCoName-area {
@@ -762,10 +789,12 @@ access
 
 .index-access__txtArea-GrCoName {
     font-size: 14px;
+    line-height: 20px;
 }
 
 .index-access__txtArea-GrCoAdd {
     font-size: 14px;
+    line-height: 20px;
     text-decoration: underline;
 }
 
@@ -785,7 +814,7 @@ access
     }
 
     .index-access__txtArea-ttl1-area {
-        margin-bottom: 20px;
+        margin-bottom: calc(20px + 4px);
     }
 
     .index-access__txtArea-ttl1 {
@@ -798,6 +827,7 @@ access
 
     .index-access__txtArea-CoName {
         font-size: 18px;
+        line-height: 26px;
     }
 
     .index-access__txtArea-CoAdd-area {
@@ -806,6 +836,7 @@ access
 
     .index-access__txtArea-CoAdd {
         font-size: 18px;
+        line-height: 26px;
     }
 
     .index-access__txtArea-CoGMap-area {
@@ -825,10 +856,13 @@ access
 
     .index-access__txtArea-CoTraInfo {
         font-size: 12px;
+        line-height: calc(35px / 2);
     }
 
     .index-access__txtArea-ttl2-area {
-        margin-bottom: 20px;
+        /* 基順線から下にはみ出てる分だけ修正 */
+        margin-top: -4px;
+        margin-bottom: calc(20px + 4px);
     }
 
     .index-access__txtArea-ttl2 {
@@ -841,10 +875,12 @@ access
 
     .index-access__txtArea-GrCoName {
         font-size: 18px;
+        line-height: 26px;
     }
 
     .index-access__txtArea-GrCoAdd {
         font-size: 18px;
+        line-height: 26px;
     }
 }
 
@@ -877,6 +913,7 @@ access
 
     .index-access__txtArea-CoName {
         font-size: 9px;
+        line-height: 13px;
     }
 
     .index-access__txtArea-CoAdd-area {
@@ -885,6 +922,7 @@ access
 
     .index-access__txtArea-CoAdd {
         font-size: 9px;
+        line-height: 13px;
     }
 
     .index-access__txtArea-CoGMap-area {
@@ -904,10 +942,13 @@ access
 
     .index-access__txtArea-CoTraInfo {
         font-size: 6px;
+        line-height: calc(17.5px / 2);
     }
 
     .index-access__txtArea-ttl2-area {
-        margin-bottom: 10px;
+        /* 基順線から下にはみ出てる分だけ修正 */
+        margin-top: -2px;
+        margin-bottom: calc(10px + 2px);
     }
 
     .index-access__txtArea-ttl2 {
@@ -920,10 +961,12 @@ access
 
     .index-access__txtArea-GrCoName {
         font-size: 9px;
+        line-height: 13px;
     }
 
     .index-access__txtArea-GrCoAdd {
         font-size: 9px;
+        line-height: 13px;
     }
 }
 
