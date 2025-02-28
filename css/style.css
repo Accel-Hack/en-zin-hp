@@ -523,10 +523,7 @@ work
     justify-content: space-between;
 }
 
-.index-work__txt-item1,
-.index-work__txt-item2,
-.index-work__txt-item3,
-.index-work__txt-item4 {
+.index-work__txt-item {
     font-family: "Helvetica", sans-serif;
     font-weight: 300;
     font-size: 32px;
@@ -576,10 +573,7 @@ work
         left: 0;
     }
 
-    .index-work__txt-item1,
-    .index-work__txt-item2,
-    .index-work__txt-item3,
-    .index-work__txt-item4 {
+    .index-work__txt-item {
         font-size: 33px;
     }
 
@@ -623,10 +617,7 @@ work
         left: 0;
     }
 
-    .index-work__txt-item1,
-    .index-work__txt-item2,
-    .index-work__txt-item3,
-    .index-work__txt-item4 {
+    .index-work__txt-item {
         font-size: 16.5px;
     }
 
