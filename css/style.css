@@ -81,9 +81,6 @@ header
     padding: 14px 0 0 0;
 }
 
-.header__nav-item {
-}
-
 .header__nav-link {
     font-family: "Helvetica", sans-serif;
     font-weight: 300;
@@ -113,9 +110,6 @@ header
         padding: 20.94px 0 0 0;
     }
 
-    .header__nav-item {
-    }
-
     .header__nav-link {
         font-size: 23px;
     }
@@ -142,9 +136,6 @@ header
 
     .header__nav-list {
         padding: 9.2px 0 0 0;
-    }
-
-    .header__nav-item {
     }
 
     .header__nav-link {
