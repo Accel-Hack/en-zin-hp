@@ -62,7 +62,7 @@ header
 .header__inner {
     display: flex;
     justify-content: space-between;
-    padding: 23px 49px 0 44px;
+    margin: 23px 49px 0 44px;
 }
 
 
@@ -78,7 +78,7 @@ header
 .header__nav-list {
     display: flex;
     justify-content: space-between;
-    padding: 14px 0 0 0;
+    margin: 14px 0 0 0;
 }
 
 .header__nav-link {
@@ -93,7 +93,7 @@ header
     }
 
     .header__inner {
-        padding: 40.6px 23px 0 40px;
+        margin: 40.6px 23px 0 40px;
     }
 
 
@@ -107,7 +107,7 @@ header
     }
 
     .header__nav-list {
-        padding: 20.94px 0 0 0;
+        margin: 20.94px 0 0 0;
     }
 
     .header__nav-link {
@@ -121,7 +121,7 @@ header
     }
 
     .header__inner {
-        padding: 20.3px 15px 0 20px;
+        margin: 20.3px 15px 0 20px;
     }
 
 
@@ -135,7 +135,7 @@ header
     }
 
     .header__nav-list {
-        padding: 9.2px 0 0 0;
+        margin: 9.2px 0 0 0;
     }
 
     .header__nav-link {
@@ -204,10 +204,13 @@ kv
     left: 50px;
 }
 
+.index-kv__txtArea-sbttl-area {
+    margin-bottom: 26px;
+}
+
 .index-kv__txtArea-sbttl {
     font-size: 12px;
     font-weight: bold;
-    padding-bottom: 26px;
 }
 
 .index-kv__txtArea-txt {
@@ -246,9 +249,12 @@ kv
         left: 40px;
     }
 
+    .index-kv__txtArea-sbttl-area {
+        margin-bottom: 34.09px;
+    }
+
     .index-kv__txtArea-sbttl {
         font-size: 24px;
-        padding-bottom: 34.09px;
     }
 
     .index-kv__txtArea-txt {
@@ -288,9 +294,12 @@ kv
         left: 20px;
     }
 
+    .index-kv__txtArea-sbttl-area {
+        margin-bottom: 15px;
+    }
+
     .index-kv__txtArea-sbttl {
         font-size: 12px;
-        padding-bottom: 15px;
     }
 
     .index-kv__txtArea-txt {
@@ -363,17 +372,23 @@ about
     left: 50px;
 }
 
+.index-about__txtArea-ttl-area {
+    margin-bottom: 10px;
+}
+
 .index-about__txtArea-ttl {
     font-family: "Helvetica", sans-serif;
     font-weight: 300;
     font-size: 36px;
-    padding-bottom: 10px;
+}
+
+.index-about__txtArea-sbttl-area {
+    margin-bottom: 15px;
 }
 
 .index-about__txtArea-sbttl {
     font-size: 18px;
     font-weight: bold;
-    padding-bottom: 15px;
 }
 
 .index-about__txtArea-txt {
@@ -410,14 +425,20 @@ about
         left: 40px;
     }
 
+    .index-about__txtArea-ttl-area {
+        margin-bottom: 5px;
+    }
+
     .index-about__txtArea-ttl {
         font-size: 38px;
-        padding-bottom: 5px;
+    }
+
+    .index-about__txtArea-sbttl-area {
+        margin-bottom: 15px;
     }
 
     .index-about__txtArea-sbttl {
         font-size: 24px;
-        padding-bottom: 15px;
     }
 
     .index-about__txtArea-txt {
@@ -455,14 +476,20 @@ about
         left: 20px;
     }
 
+    .index-about__txtArea-ttl-area {
+        margin-bottom: 2.5px;
+    }
+
     .index-about__txtArea-ttl {
         font-size: 19px;
-        padding-bottom: 2.5px;
+    }
+
+    .index-about__txtArea-sbttl-area {
+        margin-bottom: 7.5px;
     }
 
     .index-about__txtArea-sbttl {
         font-size: 12px;
-        padding-bottom: 7.5px;
     }
 
     .index-about__txtArea-txt {
@@ -527,17 +554,23 @@ work
     left: 50px;
 }
 
+.index-work__txtArea-ttl-area {
+    margin-bottom: 10px;
+}
+
 .index-work__txtArea-ttl {
     font-family: "Helvetica Light", sans-serif;
     font-weight: 300;
     font-size: 36px;
-    padding-bottom: 10px;
+}
+
+.index-work__txtArea-sbttl-area {
+    margin-bottom: 15px;
 }
 
 .index-work__txtArea-sbttl {
     font-size: 18px;
     font-weight: bold;
-    padding-bottom: 15px;
 }
 
 .index-work__txtArea-txt {
@@ -573,14 +606,20 @@ work
         left: 40px;
     }
 
+    .index-work__txtArea-ttl-area {
+        margin-bottom: 5px;
+    }
+
     .index-work__txtArea-ttl {
         font-size: 38px;
-        padding-bottom: 5px;
+    }
+
+    .index-work__txtArea-sbttl-area {
+        margin-bottom: 15px;
     }
 
     .index-work__txtArea-sbttl {
         font-size: 24px;
-        padding-bottom: 15px;
     }
 
     .index-work__txtArea-txt {
@@ -617,14 +656,20 @@ work
         left: 20px;
     }
 
+    .index-work__txtArea-ttl-area {
+        margin-bottom: 2.5px;
+    }
+
     .index-work__txtArea-ttl {
         font-size: 19px;
-        padding-bottom: 2.5px;
+    }
+
+    .index-work__txtArea-sbttl-area {
+        margin-bottom: 7.5px;
     }
 
     .index-work__txtArea-sbttl {
         font-size: 12px;
-        padding-bottom: 7.5px;
     }
 
     .index-work__txtArea-txt {
@@ -652,21 +697,34 @@ access
     left: 50px;
 }
 
+.index-access__txtArea-ttl1-area {
+    margin-bottom: 15px;
+}
+
 .index-access__txtArea-ttl1 {
     font-family: "Helvetica Light", sans-serif;
     font-weight: 300;
     font-size: 36px;
-    padding-bottom: 15px;
+}
+
+.index-access__txtArea-CoName-area {
+    margin-bottom: 5px;
 }
 
 .index-access__txtArea-CoName {
     font-size: 14px;
-    padding-bottom: 5px;
+}
+
+.index-access__txtArea-CoAdd-area {
+    margin-bottom: 15px;
 }
 
 .index-access__txtArea-CoAdd {
     font-size: 14px;
-    padding-bottom: 15px;
+}
+
+.index-access__txtArea-CoGMap-area {
+    margin-bottom: 30.58px;
 }
 
 .index-access__txtArea-CoGMap {
@@ -678,24 +736,32 @@ access
     align-items: center;
     justify-content: center;
     font-size: 9px;
-    margin-bottom: 30.58px;
+}
+
+.index-access__txtArea-CoTraInfo-area {
+    margin-bottom: 30px;
 }
 
 .index-access__txtArea-CoTraInfo {
     font-size: 12px;
-    padding-bottom: 30px;
+}
+
+.index-access__txtArea-ttl2-area {
+    margin-bottom: 20px;
 }
 
 .index-access__txtArea-ttl2 {
     font-family: "Helvetica Light", sans-serif;
     font-weight: 300;
     font-size: 36px;
-    padding-bottom: 20px;
+}
+
+.index-access__txtArea-GrCoName-area {
+    margin-bottom: 5px;
 }
 
 .index-access__txtArea-GrCoName {
     font-size: 14px;
-    padding-bottom: 5px;
 }
 
 .index-access__txtArea-GrCoAdd {
@@ -718,19 +784,32 @@ access
         left: 40px;
     }
 
+    .index-access__txtArea-ttl1-area {
+        margin-bottom: 20px;
+    }
+
     .index-access__txtArea-ttl1 {
         font-size: 38px;
-        padding-bottom: 20px;
+    }
+
+    .index-access__txtArea-CoName-area {
+        margin-bottom: 7px;
     }
 
     .index-access__txtArea-CoName {
         font-size: 18px;
-        padding-bottom: 7px;
+    }
+
+    .index-access__txtArea-CoAdd-area {
+        margin-bottom: 20px;
     }
 
     .index-access__txtArea-CoAdd {
         font-size: 18px;
-        padding-bottom: 20px;
+    }
+
+    .index-access__txtArea-CoGMap-area {
+        margin-bottom: 19.77px;
     }
 
     .index-access__txtArea-CoGMap {
@@ -738,22 +817,30 @@ access
         height: 32.23px; /* 長方形の縦幅 */
         border-radius: 16.115px; /* 縦の半分を指定して左右を半円に */
         font-size: 17px;
-        margin-bottom: 19.77px;
+    }
+
+    .index-access__txtArea-CoTraInfo-area {
+        margin-bottom: 43px;
     }
 
     .index-access__txtArea-CoTraInfo {
         font-size: 12px;
-        padding-bottom: 43px;
+    }
+
+    .index-access__txtArea-ttl2-area {
+        margin-bottom: 20px;
     }
 
     .index-access__txtArea-ttl2 {
         font-size: 38px;
-        padding-bottom: 20px;
+    }
+
+    .index-access__txtArea-GrCoName-area {
+        margin-bottom: 0;
     }
 
     .index-access__txtArea-GrCoName {
         font-size: 18px;
-        padding-bottom: 0;
     }
 
     .index-access__txtArea-GrCoAdd {
@@ -776,19 +863,32 @@ access
         left: 20px;
     }
 
+    .index-access__txtArea-ttl1-area {
+        margin-bottom: 10px;
+    }
+
     .index-access__txtArea-ttl1 {
         font-size: 19px;
-        padding-bottom: 10px;
+    }
+
+    .index-access__txtArea-CoName-area {
+        margin-bottom: 3.5px;
     }
 
     .index-access__txtArea-CoName {
         font-size: 9px;
-        padding-bottom: 3.5px;
+    }
+
+    .index-access__txtArea-CoAdd-area {
+        margin-bottom: 10px;
     }
 
     .index-access__txtArea-CoAdd {
         font-size: 9px;
-        padding-bottom: 10px;
+    }
+
+    .index-access__txtArea-CoGMap-area {
+        margin-bottom: 9.885px;
     }
 
     .index-access__txtArea-CoGMap {
@@ -796,22 +896,30 @@ access
         height: 16.115px; /* 長方形の縦幅 */
         border-radius: 8.0575px; /* 縦の半分を指定して左右を半円に */
         font-size: 8.5px;
-        margin-bottom: 9.885px;
+    }
+
+    .index-access__txtArea-CoTraInfo-area {
+        margin-bottom: 21.5px;
     }
 
     .index-access__txtArea-CoTraInfo {
         font-size: 6px;
-        padding-bottom: 21.5px;
+    }
+
+    .index-access__txtArea-ttl2-area {
+        margin-bottom: 10px;
     }
 
     .index-access__txtArea-ttl2 {
         font-size: 19px;
-        padding-bottom: 10px;
+    }
+
+    .index-access__txtArea-GrCoName-area {
+        margin-bottom: 0;
     }
 
     .index-access__txtArea-GrCoName {
         font-size: 9px;
-        padding-bottom: 0;
     }
 
     .index-access__txtArea-GrCoAdd {
