@@ -559,7 +559,7 @@ work
 }
 
 .index-work__txtArea-ttl {
-    font-family: "Helvetica Light", sans-serif;
+    font-family: "Helvetica", sans-serif;
     font-weight: 300;
     font-size: 36px;
 }
@@ -702,7 +702,7 @@ access
 }
 
 .index-access__txtArea-ttl1 {
-    font-family: "Helvetica Light", sans-serif;
+    font-family: "Helvetica", sans-serif;
     font-weight: 300;
     font-size: 36px;
 }
@@ -751,7 +751,7 @@ access
 }
 
 .index-access__txtArea-ttl2 {
-    font-family: "Helvetica Light", sans-serif;
+    font-family: "Helvetica", sans-serif;
     font-weight: 300;
     font-size: 36px;
 }
@@ -940,7 +940,7 @@ contact
 .index-contact__txt {
     margin-top: 33px;
     margin-bottom: 37px;
-    font-family: "Helvetica Light", sans-serif;
+    font-family: "Helvetica", sans-serif;
     font-weight: 300;
     font-size: 36px;
 }
