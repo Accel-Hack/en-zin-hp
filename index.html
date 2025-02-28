@@ -6,16 +6,15 @@
     <title>en-zin</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    // EmailJSを読み込む
+    <!-- EmailJSを読み込む -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    // EmailJSを初期化する
+    <!-- EmailJSを初期化する -->
     <script type="text/javascript">
         (function () {
-            // https://dashboard.emailjs.com/admin/account
             emailjs.init('veK33EMY2XA343et5');
         })();
     </script>
-    // submitされたらメール送信
+    <!-- submitされたらメール送信 -->
     <script type="text/javascript">
         window.onload = function () {
             document.getElementById('contact-form').addEventListener('submit', function (event) {
