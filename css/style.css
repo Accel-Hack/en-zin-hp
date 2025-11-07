@@ -193,11 +193,9 @@ about
     width: 536px;
     height: 536px;
     position: absolute;
-    top: 2px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-50%), calc(-50% + 2px / 2));
     opacity: 0.4475;
     mix-blend-mode: hard-light;
 }
@@ -230,188 +228,34 @@ about
 /*
 work
  */
-.index-work__img-deco {
-    width: 500px;
-    height: 500px;
-    position: absolute;
-    top: 28px;
-    right: 0;
-    bottom: 0;
-    left: clamp(0px, calc(482 * 100vw / 1366), 482px);
-    margin: auto;
-    mix-blend-mode: overlay;
-    opacity: 1;
-    filter: blur(26px);
-}
-
 .index-work__img {
-    width: 500px;
-    height: 500px;
+    width: 1001px;
+    height: 1033px;
     position: absolute;
-    top: 28px;
-    right: 0;
-    bottom: 0;
-    left: clamp(0px, calc(482 * 100vw / 1366), 482px);
-    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-50% + (-130px - 495px) / 2), calc(-50% + (12px + 274px) / 2));
+    opacity: 0.45;
     mix-blend-mode: hard-light;
-    opacity: 1;
 }
 
-.index-work__txt-area {
-    width: 229px;
-    height: 178px;
+.index-work__txt {
+    width: calc(267px * 2 + 55px);
+    height: calc(211px * 2 + 5px);
     position: absolute;
-    top: 28px;
-    right: 335px;
-    bottom: 0;
-    left: 0;
-    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-50% + (646px - 131px) / 2), calc(-50% + (151px - 187px) / 2));
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
-}
-
-.index-work__txt-item {
-    font-family: "Helvetica", sans-serif;
-    font-weight: 300;
-    font-size: 32px;
-    opacity: 1;
-}
-
-.index-work__txtArea {
-    position: absolute;
-    bottom: 50px;
-    left: 50px;
-}
-
-.index-work__txtArea-ttl-area {
-    margin-bottom: calc(10px + 4px);
-}
-
-.index-work__txtArea-ttl {
-    font-family: "Helvetica", sans-serif;
-    font-weight: 300;
-    font-size: 36px;
-    line-height: 1;
-}
-
-.index-work__txtArea-sbttl-area {
-    margin-bottom: 15px;
-}
-
-.index-work__txtArea-sbttl {
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 26px;
-}
-
-.index-work__txtArea-txt {
-    font-size: 12px;
-    line-height: calc(34px / 2);
+    row-gap: 5px;
 }
 
 @media screen and (orientation: portrait) {
-    .index-work__img-deco,
-    .index-work__img {
-        width: 564.18px;
-        height: 564.18px;
-        top: 0;
-        right: 9px;
-        bottom: 169.62px;
-        left: 0;
-    }
-
-    .index-work__txt-area {
-        width: 229px;
-        height: 168.04px;
-        top: 335.06px;
-        right: 222.98px;
-        bottom: 0;
-        left: 0;
-    }
-
-    .index-work__txt-item {
-        font-size: 33px;
-    }
-
-    .index-work__txtArea {
-        bottom: 37px;
-        left: 40px;
-    }
-
-    .index-work__txtArea-ttl-area {
-        margin-bottom: calc(5px + 4px);
-    }
-
-    .index-work__txtArea-ttl {
-        font-size: 38px;
-    }
-
-    .index-work__txtArea-sbttl-area {
-        margin-bottom: 15px;
-    }
-
-    .index-work__txtArea-sbttl {
-        font-size: 24px;
-        line-height: 35px;
-    }
-
-    .index-work__txtArea-txt {
-        font-size: 18px;
-        line-height: calc(52px / 2);
-    }
 }
 
 @media screen and (max-width: 649px), screen and (max-height: 649px) {
-    .index-work__img-deco,
-    .index-work__img {
-        width: 282.09px;
-        height: 282.92px;
-        top: 0;
-        right: 4.5px;
-        bottom: 84.81px;
-        left: 0;
-    }
-
-    .index-work__txt-area {
-        width: 114.5px;
-        height: 84.02px;
-        top: 167.53px;
-        right: 111.49px;
-        bottom: 0;
-        left: 0;
-    }
-
-    .index-work__txt-item {
-        font-size: 16.5px;
-    }
-
-    .index-work__txtArea {
-        bottom: 18.5px;
-        left: 20px;
-    }
-
-    .index-work__txtArea-ttl-area {
-        margin-bottom: calc(2.5px + 2px);
-    }
-
-    .index-work__txtArea-ttl {
-        font-size: 19px;
-    }
-
-    .index-work__txtArea-sbttl-area {
-        margin-bottom: 7.5px;
-    }
-
-    .index-work__txtArea-sbttl {
-        font-size: 12px;
-        line-height: 17.5px;
-    }
-
-    .index-work__txtArea-txt {
-        font-size: 9px;
-        line-height: calc(26px / 2);
-    }
 }
 
 /*
