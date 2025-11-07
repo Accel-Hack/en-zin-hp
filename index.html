@@ -2,20 +2,42 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>en-zin</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- EmailJSを読み込む -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- EmailJSを初期化する -->
+    <script type="text/javascript">
+        (function () {
+            emailjs.init('veK33EMY2XA343et5');
+        })();
+    </script>
+    <!-- submitされたらメール送信 -->
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                emailjs.sendForm('service_xxpcvjp', 'template_3ll45wi', this)
+                    .then(function () {
+                        console.log('SUCCESS!');
+                    }, function (error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 <body>
 <div class="wrapper">
-    <header class="header" id="top">
+    <header class="header">
         <div class="header__wrapper">
             <div class="header__inner">
                 <div class="header__logo">
                     <h1 class="header__logo-item">
                         <a class="header__logo-link" href="#top">
-                            <!--
                             <img class="header__logo-img" src="./img/logo-w.png" alt="ヘッダーロゴ">
-                            -->
-                            <img class="header__logo-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAYoEy2t4I0FGfZlGlu-UL6L7CTkM9uAj8kmRRM2tiucASh0FEKbcxZmu-dQcTQnSeOQmKkkcTIa2Q_xvwVjMrd3FCaEs-JFLCeRokabLMi_TBatIzTRrFg-_jrKON-x8FhLnlXaCTIuhYwd2ey6yvcoDy4ByuqEE2ChiITWclZBiG3b1jrYV2f4fWcg/s400/money_tokyo_syouken_torihiki2.png" alt="">
                         </a>
                     </h1>
                 </div>
@@ -44,20 +66,21 @@
     <main class="main">
         <div class="main__inner">
             <div class="main__wrapper">
-                <section class="index-kv__container">
+                <section class="index-kv__container parallax" id="top">
                     <div class="index-kv">
                         <div class="index-kv__inner">
-                            <div class="index-kv__imgArea">
-                                <!--
-                                <img class="index-kv__imgArea-img" src="./img/en_3D.png" alt="ロゴ 3D">
-                                -->
-                                <img class="index-kv__imgArea-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEht9E4bWQYEfkp6yjZgThtZbPJdwQ0baA5W_kRz8ZsSWnkue67yBT5Fr2eZEXpVC6ijChrgegGHbAaPk0-dehGoQqN4ChqUYijP5KvNa5DNHRsBKHCvM8rV8OAmbUchjd21HVlQ-xG0AhM/s400/building_biyouin.png" alt="ロゴ 3D">
-                                <div class="index-kv__imgArea-txt-area">
-                                    <h2 class="index-kv__imgArea-txt">
-                                        en-zin
-                                    </h2>
-                                </div>
-                            </div>
+                            <div class="index-kv__circle"></div>
+                            <img class="index-kv__img1" src="./img/en_3D.png" alt="ロゴ 3D">
+                            <img class="index-kv__img2-deco"
+                                 srcset="./img/logo_text.svg 215w, ./img/logo_text_sp.svg 279.422w"
+                                 sizes="(min-width: 961px) 215px, 279.422px"
+                                 src="./img/logo_text.svg"
+                                 alt="ロゴ テキスト 装飾">
+                            <img class="index-kv__img2"
+                                 srcset="./img/logo_text.svg 215w, ./img/logo_text_sp.svg 279.422w"
+                                 sizes="(min-width: 961px) 215px, 279.422px"
+                                 src="./img/logo_text.svg"
+                                 alt="ロゴ テキスト">
                             <div class="index-kv__txtArea">
                                 <div class="index-kv__txtArea-sbttl-area">
                                     <h4 class="index-kv__txtArea-sbttl">
@@ -75,19 +98,28 @@
                         </div>
                     </div>
                 </section>
-                <section class="index-about__container" id="about">
+                <section class="index-about__container parallax" id="about">
                     <div class="index-about">
                         <div class="index-about__inner">
                             <div class="index-about__txt-area">
                                 <h2 class="index-about__txt">
-                                    join ████
+                                    join
                                 </h2>
+                            </div>
+                            <div class="index-about__txt-area">
+                                <h2 class="index-about__txt-deco">
+                                    join
+                                </h2>
+                            </div>
+                            <div class="index-about__box-deco">
+                            </div>
+                            <div class="index-about__box">
                             </div>
                             <div class="index-about__txtArea">
                                 <div class="index-about__txtArea-ttl-area">
-                                    <h4 class="index-about__txtArea-ttl">
+                                    <h3 class="index-about__txtArea-ttl">
                                         about
-                                    </h4>
+                                    </h3>
                                 </div>
                                 <div class="index-about__txtArea-sbttl-area">
                                     <h4 class="index-about__txtArea-sbttl">
@@ -105,9 +137,119 @@
                         </div>
                     </div>
                 </section>
-                <section class="index-work__container" id="work"></section>
-                <section class="index-access__container" id="access"></section>
-                <section class="index-contact__container" id="contact"></section>
+                <section class="index-work__container parallax" id="work">
+                    <div class="index-work">
+                        <div class="index-work__inner">
+                            <img class="index-work__img-deco" src="./img/en2.png" alt="ロゴ 2D 装飾">
+                            <img class="index-work__img" src="./img/en2.png" alt="ロゴ 2D">
+                            <ul class="index-work__txt-area">
+                                <li class="index-work__txt-item">event</li>
+                                <li class="index-work__txt-item">event operation</li>
+                                <li class="index-work__txt-item">design</li>
+                                <li class="index-work__txt-item">planning</li>
+                            </ul>
+                            <div class="index-work__txtArea">
+                                <div class="index-work__txtArea-ttl-area">
+                                    <h3 class="index-work__txtArea-ttl">
+                                        work
+                                    </h3>
+                                </div>
+                                <div class="index-work__txtArea-sbttl-area">
+                                    <h4 class="index-work__txtArea-sbttl">
+                                        誰かの「人生の1ページ」の悦びに繋げる。
+                                    </h4>
+                                </div>
+                                <div class="index-work__txtArea-txt-area">
+                                    <h5 class="index-work__txtArea-txt">
+                                        テキストテキストテキストテキストテキストテキス
+                                        <br>
+                                        テキストテキストテキストテキストテキストテキス
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="index-access__container parallax" id="access">
+                    <div class="index-access">
+                        <div class="index-access__inner">
+                            <img class="index-access__img" src="./img/map.png" alt="en-zinの地図">
+                            <div class="index-access__txtArea">
+                                <div class="index-access__txtArea-ttl1-area">
+                                    <h3 class="index-access__txtArea-ttl1">
+                                        access
+                                    </h3>
+                                </div>
+                                <div class="index-access__txtArea-CoName-area">
+                                    <h4 class="index-access__txtArea-CoName">
+                                        株式会社 en-zin
+                                    </h4>
+                                </div>
+                                <div class="index-access__txtArea-CoAdd-area">
+                                    <h4 class="index-access__txtArea-CoAdd">
+                                        〒160-0023 東京都新宿区西新宿3-5-9 ETS西新宿ビル B1F
+                                    </h4>
+                                </div>
+                                <div class="index-access__txtArea-CoGMap-area">
+                                    <a class="index-access__txtArea-CoGMap"
+                                       href="https://www.google.co.jp/maps/place/%E3%80%92160-0023+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%B0%E5%AE%BF%E5%8C%BA%E8%A5%BF%E6%96%B0%E5%AE%BF%EF%BC%93%E4%B8%81%E7%9B%AE%EF%BC%95%E2%88%92%EF%BC%99+ETS+%E8%A5%BF%E6%96%B0%E5%AE%BF%E3%83%93%E3%83%AB+b1f/@35.6861574,139.6897905,17z/data=!3m1!4b1!4m5!3m4!1s0x60188cd2dfe9e4ed:0x8421d3743a9e904a!8m2!3d35.6861574!4d139.6923654?hl=ja&entry=ttu&g_ep=EgoyMDI1MDIxNy4wIKXMDSoASAFQAw%3D%3D">
+                                        Google map
+                                    </a>
+                                </div>
+                                <div class="index-access__txtArea-CoTraInfo-area">
+                                    <h4 class="index-access__txtArea-CoTraInfo">
+                                        JR新宿駅 西口から徒歩10分
+                                        <br>
+                                        都営大江戸線 都庁前駅から徒歩10分
+                                    </h4>
+                                </div>
+                                <div class="index-access__txtArea-ttl2-area">
+                                    <h3 class="index-access__txtArea-ttl2">
+                                        group company
+                                    </h3>
+                                </div>
+                                <div class="index-access__txtArea-GrCoName-area">
+                                    <h4 class="index-access__txtArea-GrCoName">
+                                        GLOE株式会社
+                                    </h4>
+                                </div>
+                                <div class="index-access__txtArea-GrCoAdd-area">
+                                    <a class="index-access__txtArea-GrCoAdd" href="https://gloe.jp/">
+                                        URL：https://gloe.jp/
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="index-contact__container parallax" id="contact">
+                    <div class="index-contact">
+                        <div class="index-contact__inner">
+                            <h2 class="index-contact__txt">
+                                contact
+                            </h2>
+                            <form class="index-contact__form" id="contact-form">
+                                <input type="hidden" name="contact_number">
+                                <label class="index-contact__form-name">お名前<br><input type="text" name="name"
+                                                                                         required></label>
+                                <label class="index-contact__form-furigana">お名前(フリガナ)<br><input type="text"
+                                                                                                       name="furigana"
+                                                                                                       required></label>
+                                <label class="index-contact__form-email">メールアドレス<br><input type="email"
+                                                                                                  name="email"
+                                                                                                  required></label>
+                                <label class="index-contact__form-company">会社名<br><input type="text"
+                                                                                            name="company"></label>
+                                <label class="index-contact__form-massage">お問い合わせ内容<br><textarea name="message"
+                                                                                                         required></textarea></label>
+                                <button type="submit" class="index-contact__form-button">send</button>
+                            </form>
+                            <div class="index-contact__copyright">
+                                ©en-zin Inc. copyright
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </main>
