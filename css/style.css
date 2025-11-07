@@ -11,6 +11,14 @@
     height: 100%;
 }
 
+.float {
+    font-size: 120px;
+    font-family: Inter;
+    margin-left: 50px;
+    line-height: 1;
+    opacity: 0.2004;
+}
+
 .index-kv__container,
 .index-about__container,
 .index-work__container,
@@ -181,198 +189,42 @@ kv
 /*
 about
  */
-.index-about__txt-area {
-    width: 249px;
-    height: 160px;
+.index-about__img {
+    width: 536px;
+    height: 536px;
     position: absolute;
-    top: 0;
-    right: 431px;
-    bottom: 96px;
+    top: 2px;
+    right: 0;
+    bottom: 0;
     left: 0;
     margin: auto;
+    opacity: 0.4475;
+    mix-blend-mode: hard-light;
 }
 
-.index-about__txt {
-    font-family: "Helvetica", sans-serif;
-    font-weight: 300;
-    font-size: 160px;
-    opacity: 0.83;
-}
-
-.index-about__txt-deco {
-    font-family: "Helvetica", sans-serif;
-    font-weight: 300;
-    font-size: 160px;
-    opacity: 1;
-    filter: blur(13px);
-    mix-blend-mode: overlay;
-}
-
-.index-about__box-deco {
-    width: 436px;
-    height: 110px;
-    background: #ffffff;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 72px;
-    left: 314px;
-    margin: auto;
-    mix-blend-mode: overlay;
-    opacity: 0.91;
-    filter: blur(16px);
-}
-
-.index-about__box {
-    width: 436px;
-    height: 110px;
-    background: #ffffff;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 72px;
-    left: 314px;
-    margin: auto;
-    mix-blend-mode: screen;
-    opacity: 0.91;
-}
-
-.index-about__txtArea {
-    position: absolute;
-    bottom: 52px;
-    left: 50px;
-}
-
-.index-about__txtArea-ttl-area {
-    margin-bottom: calc(10px + 4px);
-}
-
-.index-about__txtArea-ttl {
-    font-family: "Helvetica", sans-serif;
-    font-weight: 300;
-    font-size: 36px;
-    line-height: 1;
-}
-
-.index-about__txtArea-sbttl-area {
-    margin-bottom: 15px;
-}
-
-.index-about__txtArea-sbttl {
-    font-size: 18px;
+.index-about__txt1 {
+    font-size: 34px;
     font-weight: bold;
-    line-height: 26px;
+    line-height: 68px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-50% + (261px - 683px) / 2), calc(-50% + (263px - 319px) / 2));
 }
 
-.index-about__txtArea-txt {
-    font-size: 12px;
-    line-height: calc(34px / 2);
+.index-about__txt2 {
+    font-size: 10px;
+    line-height: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-50% + (275px - 811px) / 2), calc(-50% + (472px - 152px) / 2));
 }
 
 @media screen and (orientation: portrait) {
-    .index-about__txt-area {
-        width: 383px;
-        height: 246px;
-        top: 0;
-        right: 93px;
-        bottom: 358px;
-        left: 0;
-    }
-
-    .index-about__txt,
-    .index-about__txt-deco {
-        font-size: 246px;
-    }
-
-    .index-about__box-deco,
-    .index-about__box {
-        width: 476px;
-        height: 169.11px;
-        top: 138.87px;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
-
-    .index-about__txtArea {
-        bottom: 41px;
-        left: 40px;
-    }
-
-    .index-about__txtArea-ttl-area {
-        margin-bottom: calc(5px + 4px);
-    }
-
-    .index-about__txtArea-ttl {
-        font-size: 38px;
-    }
-
-    .index-about__txtArea-sbttl-area {
-        margin-bottom: 15px;
-    }
-
-    .index-about__txtArea-sbttl {
-        font-size: 24px;
-        line-height: 35px;
-    }
-
-    .index-about__txtArea-txt {
-        font-size: 18px;
-        line-height: calc(52px / 2);
-    }
 }
 
 @media screen and (max-width: 649px), screen and (max-height: 649px) {
-    .index-about__txt-area {
-        width: 191.5px;
-        height: 123px;
-        top: 0;
-        right: 46.5px;
-        bottom: 179px;
-        left: 0;
-    }
-
-    .index-about__txt,
-    .index-about__txt-deco {
-        font-size: 123px;
-    }
-
-    .index-about__box-deco,
-    .index-about__box {
-        width: 238px;
-        height: 85px;
-        top: 75px;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
-
-    .index-about__txtArea {
-        bottom: 20px;
-        left: 20px;
-    }
-
-    .index-about__txtArea-ttl-area {
-        margin-bottom: calc(2.5px + 2px);
-    }
-
-    .index-about__txtArea-ttl {
-        font-size: 19px;
-    }
-
-    .index-about__txtArea-sbttl-area {
-        margin-bottom: 7.5px;
-    }
-
-    .index-about__txtArea-sbttl {
-        font-size: 12px;
-        line-height: 17.5px;
-    }
-
-    .index-about__txtArea-txt {
-        font-size: 9px;
-        line-height: calc(26px / 2);
-    }
 }
 
 /*
