@@ -13,7 +13,7 @@
 
 .float {
     font-size: 120px;
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     margin-left: 50px;
     line-height: 1;
     opacity: 0.2004;
@@ -89,7 +89,7 @@ header
 }
 
 .header__nav-link {
-    font-family: "Helvetica", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 300;
     font-size: 16px;
 }
@@ -313,7 +313,7 @@ access
 }
 
 .index-access__txtArea-ttl2 {
-    font-family: "Helvetica", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 300;
     font-size: 24px;
     line-height: 40px;
@@ -519,7 +519,7 @@ contact
 .index-contact__txt {
     margin-top: 33px;
     margin-bottom: 37px;
-    font-family: "Helvetica", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 300;
     font-size: 36px;
 }
