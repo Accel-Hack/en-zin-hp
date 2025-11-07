@@ -146,56 +146,15 @@ header
 /*
 kv
  */
-.index-kv__circle {
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    background: #ffffff;
+.index-kv__img {
+    width: 250px;
+    height: 250px;
     position: absolute;
     top: 0;
-    right: 12px;
-    bottom: 30px;
+    right: 4px;
+    bottom: 4px;
     left: 0;
     margin: auto;
-    box-shadow: 0 3px 6px #001E34;
-    mix-blend-mode: overlay;
-    opacity: 0.46;
-    filter: blur(50px);
-}
-
-.index-kv__img1 {
-    width: 547px;
-    height: 547px;
-    position: absolute;
-    top: 0;
-    right: 11px;
-    bottom: 31px;
-    left: 0;
-    margin: auto;
-    mix-blend-mode: hard-light;
-    opacity: 1;
-}
-
-.index-kv__img2-deco {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 30px;
-    left: 556.03px;
-    margin: auto;
-    mix-blend-mode: overlay;
-    opacity: 1;
-    filter: blur(14px);
-}
-
-.index-kv__img2 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 30px;
-    left: 556.03px;
-    margin: auto;
-    opacity: 1;
 }
 
 .index-kv__txtArea {
@@ -222,27 +181,12 @@ kv
 }
 
 @media screen and (orientation: portrait) {
-    .index-kv__circle {
-        width: 470.25px;
-        height: 470.25px;
-        right: 1.17px;
-        bottom: 182.62px;
-    }
-
-    .index-kv__img1 {
+    .index-kv__img {
         width: 643.07px;
         height: 643.07px;
         top: 0;
         right: 0;
         bottom: 183.79px;
-        left: 0;
-    }
-
-    .index-kv__img2-deco,
-    .index-kv__img2 {
-        top: 345.62px;
-        right: 0;
-        bottom: 0;
         left: 0;
     }
 
@@ -267,29 +211,12 @@ kv
 }
 
 @media screen and (max-width: 649px), screen and (max-height: 649px) {
-    .index-kv__circle {
-        width: 235.125px;
-        height: 235.125px;
-        right: 0.585px;
-        bottom: 91.31px;
-    }
-
-    .index-kv__img1 {
+    .index-kv__img {
         width: 320px;
         height: 320px;
         top: 0;
         right: 0;
         bottom: 90px;
-        left: 0;
-    }
-
-    .index-kv__img2-deco,
-    .index-kv__img2 {
-        width: 140px;
-        height: 140px;
-        top: 170px;
-        right: 0;
-        bottom: 0;
         left: 0;
     }
 
