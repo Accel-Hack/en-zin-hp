@@ -262,100 +262,75 @@ work
 access
  */
 .index-access__img {
-    width: clamp(0px, calc(634 * 100vw / 1366), 634px);
-    height: clamp(0px, calc(513 * 100vw / 1366), 513px);
+    width: clamp(0px, calc(592 * 100vw / 1366), 592px);
+    height: clamp(0px, calc(477 * 100vw / 1366), 477px);
     position: absolute;
-    top: 7px;
-    right: 0;
-    bottom: 0;
-    left: 418px;
-    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-50% + (563.75px - 210.25px) / 2), calc(-50% + (166px - 125px) / 2));
 }
 
 .index-access__txtArea {
     position: absolute;
-    bottom: 40px;
-    left: 50px;
-}
-
-.index-access__txtArea-ttl1-area {
-    margin-bottom: calc(15px + 4px);
-}
-
-.index-access__txtArea-ttl1 {
-    font-family: "Helvetica", sans-serif;
-    font-weight: 300;
-    font-size: 36px;
-    line-height: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-50% + (230.25px - 958.25px) / 2), calc(-50% + (241px - 197px) / 2));
 }
 
 .index-access__txtArea-CoName-area {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .index-access__txtArea-CoName {
     font-size: 14px;
-    line-height: 20px;
+    line-height: 16.8px;
 }
 
 .index-access__txtArea-CoAdd-area {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 .index-access__txtArea-CoAdd {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 12px;
+    line-height: calc(16.8px + 5px);
 }
 
 .index-access__txtArea-CoGMap-area {
-    margin-bottom: 30.58px;
-}
-
-.index-access__txtArea-CoGMap {
-    width: 118px; /* 長方形の横幅 */
-    height: 15.42px; /* 長方形の縦幅 */
-    border: 1px solid white; /* 白色の枠線 */
-    border-radius: 7.71px; /* 縦の半分を指定して左右を半円に */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 9px;
+    margin-bottom: 18.58px;
 }
 
 .index-access__txtArea-CoTraInfo-area {
-    margin-bottom: 30px;
+    margin-bottom: 57px;
 }
 
 .index-access__txtArea-CoTraInfo {
-    font-size: 12px;
-    line-height: calc(35px / 2);
+    font-size: 10px;
+    line-height: 15px;
 }
 
 .index-access__txtArea-ttl2-area {
-    /* 基順線から下にはみ出てる分だけ修正 */
-    margin-top: -4px;
-    margin-bottom: calc(20px + 4px);
+    margin-bottom: 13px;
 }
 
 .index-access__txtArea-ttl2 {
     font-family: "Helvetica", sans-serif;
     font-weight: 300;
-    font-size: 36px;
-    line-height: 1;
+    font-size: 24px;
+    line-height: 40px;
 }
 
 .index-access__txtArea-GrCoName-area {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .index-access__txtArea-GrCoName {
     font-size: 14px;
-    line-height: 20px;
+    line-height: 16.8px;
 }
 
 .index-access__txtArea-GrCoAdd {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 10px;
+    line-height: 16px;
     text-decoration: underline;
 }
 
