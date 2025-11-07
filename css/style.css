@@ -156,29 +156,6 @@ kv
     margin: auto;
 }
 
-.index-kv__txtArea {
-    position: absolute;
-    bottom: 50px;
-    left: 50px;
-}
-
-.index-kv__txtArea-sbttl-area {
-    margin-bottom: 26px;
-}
-
-.index-kv__txtArea-sbttl {
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 17px;
-}
-
-.index-kv__txtArea-txt {
-    font-family: "Helvetica", sans-serif;
-    font-weight: 300;
-    font-size: 36px;
-    line-height: calc(76px / 2);
-}
-
 @media screen and (orientation: portrait) {
     .index-kv__img {
         width: 643.07px;
@@ -187,25 +164,6 @@ kv
         right: 0;
         bottom: 183.79px;
         left: 0;
-    }
-
-    .index-kv__txtArea {
-        bottom: 50px;
-        left: 40px;
-    }
-
-    .index-kv__txtArea-sbttl-area {
-        margin-bottom: 34.09px;
-    }
-
-    .index-kv__txtArea-sbttl {
-        font-size: 24px;
-        line-height: 35px;
-    }
-
-    .index-kv__txtArea-txt {
-        font-size: 38px;
-        line-height: calc(82px / 2);
     }
 }
 
@@ -217,25 +175,6 @@ kv
         right: 0;
         bottom: 90px;
         left: 0;
-    }
-
-    .index-kv__txtArea {
-        bottom: 25px;
-        left: 20px;
-    }
-
-    .index-kv__txtArea-sbttl-area {
-        margin-bottom: 15px;
-    }
-
-    .index-kv__txtArea-sbttl {
-        font-size: 12px;
-        line-height: 17.5px;
-    }
-
-    .index-kv__txtArea-txt {
-        font-size: 19px;
-        line-height: calc(41px / 2);
     }
 }
 
