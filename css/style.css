@@ -343,8 +343,8 @@ work
 access
  */
 .index-access__img {
-    width: clamp(0px, calc(592 * 100vw / 1366), 592px);
-    height: clamp(0px, calc(477 * 100vw / 1366), 477px);
+    width: clamp(0px, calc(592 * 100vw / 750), 592px);
+    height: clamp(0px, calc(477 * 100vw / 750), 477px);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -417,173 +417,137 @@ access
 
 @media screen and (orientation: portrait) {
     .index-access__img {
-        width: 586px;
-        height: 473px;
-        top: 0;
-        right: 4px;
-        bottom: 311px;
-        left: 0;
+        top: 275px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .index-access__txtArea {
-        bottom: 40px;
-        left: 40px;
-    }
-
-    .index-access__txtArea-ttl1-area {
-        margin-bottom: calc(20px + 4px);
-    }
-
-    .index-access__txtArea-ttl1 {
-        font-size: 38px;
+        top: unset;
+        bottom: 149px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .index-access__txtArea-CoName-area {
-        margin-bottom: 7px;
+        margin-bottom: 10px;
     }
 
     .index-access__txtArea-CoName {
         font-size: 18px;
-        line-height: 26px;
+        line-height: unset;
     }
 
     .index-access__txtArea-CoAdd-area {
-        margin-bottom: 20px;
+        margin-bottom: 14px;
     }
 
     .index-access__txtArea-CoAdd {
-        font-size: 18px;
-        line-height: 26px;
+        font-size: 16px;
+        line-height: calc(22px + 6px);
     }
 
     .index-access__txtArea-CoGMap-area {
-        margin-bottom: 19.77px;
+        margin-bottom: 14px;
     }
 
     .index-access__txtArea-CoGMap {
-        width: 233.79px; /* 長方形の横幅 */
-        height: 32.23px; /* 長方形の縦幅 */
-        border-radius: 16.115px; /* 縦の半分を指定して左右を半円に */
-        font-size: 17px;
+        width: calc(128px * 1.5);
+        height: calc(18px * 1.5);
     }
 
     .index-access__txtArea-CoTraInfo-area {
-        margin-bottom: 43px;
+        margin-bottom: 26px;
     }
 
     .index-access__txtArea-CoTraInfo {
-        font-size: 12px;
-        line-height: calc(35px / 2);
+        font-size: 14px;
+        line-height: 20px;
     }
 
     .index-access__txtArea-ttl2-area {
-        /* 基順線から下にはみ出てる分だけ修正 */
-        margin-top: -4px;
-        margin-bottom: calc(20px + 4px);
-    }
-
-    .index-access__txtArea-ttl2 {
-        font-size: 38px;
+        margin-bottom: 9px;
     }
 
     .index-access__txtArea-GrCoName-area {
-        margin-bottom: 0;
+        margin-bottom: 13px;
     }
 
     .index-access__txtArea-GrCoName {
         font-size: 18px;
-        line-height: 26px;
+        line-height: unset;
     }
 
     .index-access__txtArea-GrCoAdd {
-        font-size: 18px;
-        line-height: 26px;
+        font-size: 14px;
     }
 }
 
 @media screen and (max-width: 649px), screen and (max-height: 649px) {
     .index-access__img {
-        width: 293px;
-        height: 236.5px;
-        top: 0;
-        right: 2px;
-        bottom: 155.5px;
-        left: 0;
+        top: calc(275px / 2);
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .index-access__txtArea {
-        bottom: 20px;
-        left: 20px;
-    }
-
-    .index-access__txtArea-ttl1-area {
-        margin-bottom: 10px;
-    }
-
-    .index-access__txtArea-ttl1 {
-        font-size: 19px;
+        top: unset;
+        bottom: calc(149px / 2);
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .index-access__txtArea-CoName-area {
-        margin-bottom: 3.5px;
+        margin-bottom: calc(10px / 2);
     }
 
     .index-access__txtArea-CoName {
-        font-size: 9px;
-        line-height: 13px;
+        font-size: calc(18px / 2);
+        line-height: unset;
     }
 
     .index-access__txtArea-CoAdd-area {
-        margin-bottom: 10px;
+        margin-bottom: calc(14px / 2);
     }
 
     .index-access__txtArea-CoAdd {
-        font-size: 9px;
-        line-height: 13px;
+        font-size: calc(16px / 2);
+        line-height: calc((22px + 6px) / 2);
     }
 
     .index-access__txtArea-CoGMap-area {
-        margin-bottom: 9.885px;
+        margin-bottom: calc(14px / 2);
     }
 
     .index-access__txtArea-CoGMap {
-        width: 116.895px; /* 長方形の横幅 */
-        height: 16.115px; /* 長方形の縦幅 */
-        border-radius: 8.0575px; /* 縦の半分を指定して左右を半円に */
-        font-size: 8.5px;
+        width: calc(128px * 0.75);
+        height: calc(18px * 0.75);
     }
 
     .index-access__txtArea-CoTraInfo-area {
-        margin-bottom: 21.5px;
+        margin-bottom: calc(26px / 2);
     }
 
     .index-access__txtArea-CoTraInfo {
-        font-size: 6px;
-        line-height: calc(17.5px / 2);
+        font-size: calc(14px / 2);
+        line-height: calc(20px / 2);
     }
 
     .index-access__txtArea-ttl2-area {
-        /* 基順線から下にはみ出てる分だけ修正 */
-        margin-top: -2px;
-        margin-bottom: calc(10px + 2px);
-    }
-
-    .index-access__txtArea-ttl2 {
-        font-size: 19px;
+        margin-bottom: calc(9px / 2);
     }
 
     .index-access__txtArea-GrCoName-area {
-        margin-bottom: 0;
+        margin-bottom: calc(13px / 2);
     }
 
     .index-access__txtArea-GrCoName {
-        font-size: 9px;
-        line-height: 13px;
+        font-size: calc(18px / 2);
+        line-height: unset;
     }
 
     .index-access__txtArea-GrCoAdd {
-        font-size: 9px;
-        line-height: 13px;
+        font-size: calc(14px / 2);
     }
 }
 
