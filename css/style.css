@@ -19,6 +19,19 @@
     opacity: 0.2004;
 }
 
+@media screen and (orientation: portrait) {
+    .float {
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 649px), screen and (max-height: 649px) {
+    .float {
+        font-size: 60px;
+        margin-left: 20px;
+    }
+}
+
 .index-kv__container,
 .index-about__container,
 .index-work__container,
