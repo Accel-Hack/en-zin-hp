@@ -252,6 +252,8 @@ about
     }
 
     .index-about__txt1 {
+        font-size: calc(34px / 2);
+        line-height: calc(68px / 2);
         top: unset;
         bottom: calc(322px / 2);
         left: calc(40px / 2);
