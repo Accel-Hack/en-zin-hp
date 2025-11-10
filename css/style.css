@@ -19,6 +19,19 @@
     opacity: 0.2004;
 }
 
+@media screen and (orientation: portrait) {
+    .float {
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 649px), screen and (max-height: 649px) {
+    .float {
+        font-size: 60px;
+        margin-left: 20px;
+    }
+}
+
 .index-kv__container,
 .index-about__container,
 .index-work__container,
@@ -59,7 +72,7 @@ header
  */
 .header {
     width: 100%;
-    height: 90px;
+    height: 80px;
     box-sizing: border-box;
     position: fixed;
     top: 0;
@@ -69,7 +82,7 @@ header
 .header__inner {
     display: flex;
     justify-content: space-between;
-    margin: 23px 49px 0 44px;
+    margin: 15px 45px 0 44px;
 }
 
 
@@ -79,74 +92,62 @@ header
 }
 
 .header__nav {
-    width: 285px;
+    width: 289px;
 }
 
 .header__nav-list {
     display: flex;
     justify-content: space-between;
-    margin: 14px 0 0 0;
+    margin: 8px 0 0 0;
 }
 
 .header__nav-link {
     font-family: "Inter", sans-serif;
     font-weight: 300;
     font-size: 16px;
+    line-height: 24px;
 }
 
 @media screen and (orientation: portrait) {
-    .header {
-        height: 150px;
-    }
-
     .header__inner {
-        margin: 40.6px 23px 0 40px;
-    }
-
-
-    .header__logo-img {
-        width: 68.79px;
-        height: 68.79px;
+        margin: 18px 35px 0 40px;
     }
 
     .header__nav {
-        width: 422px;
-    }
-
-    .header__nav-list {
-        margin: 20.94px 0 0 0;
+        width: 313px;
     }
 
     .header__nav-link {
-        font-size: 23px;
+        font-size: 18px;
     }
 }
 
 @media screen and (max-width: 649px), screen and (max-height: 649px) {
     .header {
-        height: 75px;
+        height: calc(80px / 2);
     }
 
     .header__inner {
-        margin: 20.3px 15px 0 20px;
+        margin: 9px 17.5px 0 20px;
     }
 
 
     .header__logo-img {
-        width: 34.395px;
-        height: 34.395px;
+        width: calc(45px / 2);
+        height: calc(45px / 2);
     }
 
     .header__nav {
-        width: 211px;
+        width: calc(313px / 2);
     }
 
     .header__nav-list {
-        margin: 9.2px 0 0 0;
+        margin: 4px 0 0 0;
     }
 
     .header__nav-link {
-        font-size: 11.5px;
+        font-size: calc(18px / 2);
+        line-height: calc(24px / 2);
     }
 }
 
@@ -166,22 +167,22 @@ kv
 
 @media screen and (orientation: portrait) {
     .index-kv__img {
-        width: 643.07px;
-        height: 643.07px;
-        top: 0;
+        width: 346px;
+        height: 346px;
+        top: 6px;
         right: 0;
-        bottom: 183.79px;
+        bottom: 0;
         left: 0;
     }
 }
 
 @media screen and (max-width: 649px), screen and (max-height: 649px) {
     .index-kv__img {
-        width: 320px;
-        height: 320px;
-        top: 0;
+        width: calc(346px / 2);
+        height: calc(346px / 2);
+        top: calc(3px / 2);
         right: 0;
-        bottom: 90px;
+        bottom: 0;
         left: 0;
     }
 }
@@ -220,9 +221,53 @@ about
 }
 
 @media screen and (orientation: portrait) {
+    .index-about__img {
+        width: 514px;
+        height: 514px;
+        transform: translate(calc(-50%), calc(-50% + (210px - 610px) / 2));
+    }
+
+    .index-about__txt1 {
+        top: unset;
+        bottom: 322px;
+        left: 40px;
+        transform: unset;
+    }
+
+    .index-about__txt2 {
+        font-size: 18px;
+        line-height: 36px;
+        top: unset;
+        bottom: 72px;
+        left: 54px;
+        transform: unset;
+    }
 }
 
 @media screen and (max-width: 649px), screen and (max-height: 649px) {
+    .index-about__img {
+        width: calc(514px / 2);
+        height: calc(514px / 2);
+        transform: translate(calc(-50%), calc(-50% + (210px - 610px) / 4));
+    }
+
+    .index-about__txt1 {
+        font-size: calc(34px / 2);
+        line-height: calc(68px / 2);
+        top: unset;
+        bottom: calc(322px / 2);
+        left: calc(40px / 2);
+        transform: unset;
+    }
+
+    .index-about__txt2 {
+        font-size: calc(18px / 2);
+        line-height: calc(36px / 2);
+        top: unset;
+        bottom: calc(72px / 2);
+        left: calc(54px / 2);
+        transform: unset;
+    }
 }
 
 /*
@@ -253,17 +298,51 @@ work
 }
 
 @media screen and (orientation: portrait) {
+    .index-work__img {
+        width: 100vw;
+        height: 100vw;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .index-work__txt {
+        top: unset;
+        bottom: 162.5px;
+        transform: translateX(-50%);
+    }
 }
 
 @media screen and (max-width: 649px), screen and (max-height: 649px) {
+    .index-work__img {
+        width: 100vw;
+        height: 100vw;
+        top: max(calc(80px / 2), 12vh);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .index-work__txt {
+        width: calc((267px * 2 + 55px) / 2);
+        height: calc((211px * 2 + 5px) / 2);
+        top: unset;
+        bottom: calc(162.5px / 2);
+        transform: translateX(-50%);
+        row-gap: calc(5px / 2);
+    }
+
+    .index-work__txt-img {
+        width: calc(267px / 2);
+        height: calc(211px / 2);
+    }
 }
 
 /*
 access
  */
 .index-access__img {
-    width: clamp(0px, calc(592 * 100vw / 1366), 592px);
-    height: clamp(0px, calc(477 * 100vw / 1366), 477px);
+    width: clamp(0px, calc(592 * 100vw / 750), 592px);
+    height: clamp(0px, calc(477 * 100vw / 750), 477px);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -336,173 +415,139 @@ access
 
 @media screen and (orientation: portrait) {
     .index-access__img {
-        width: 586px;
-        height: 473px;
-        top: 0;
-        right: 4px;
-        bottom: 311px;
-        left: 0;
+        top: clamp(0px, calc(275 * 100vw / 1334), 275px);
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .index-access__txtArea {
-        bottom: 40px;
-        left: 40px;
-    }
-
-    .index-access__txtArea-ttl1-area {
-        margin-bottom: calc(20px + 4px);
-    }
-
-    .index-access__txtArea-ttl1 {
-        font-size: 38px;
+        top: unset;
+        bottom: clamp(0px, calc(149 * 100vw / 1334), 149px);
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .index-access__txtArea-CoName-area {
-        margin-bottom: 7px;
+        margin-bottom: 10px;
     }
 
     .index-access__txtArea-CoName {
         font-size: 18px;
-        line-height: 26px;
+        line-height: unset;
     }
 
     .index-access__txtArea-CoAdd-area {
-        margin-bottom: 20px;
+        margin-bottom: 14px;
     }
 
     .index-access__txtArea-CoAdd {
-        font-size: 18px;
-        line-height: 26px;
+        font-size: 16px;
+        line-height: calc(22px + 6px);
     }
 
     .index-access__txtArea-CoGMap-area {
-        margin-bottom: 19.77px;
+        margin-bottom: 14px;
     }
 
     .index-access__txtArea-CoGMap {
-        width: 233.79px; /* 長方形の横幅 */
-        height: 32.23px; /* 長方形の縦幅 */
-        border-radius: 16.115px; /* 縦の半分を指定して左右を半円に */
-        font-size: 17px;
+        width: calc(128px * 1.5);
+        height: calc(18px * 1.5);
     }
 
     .index-access__txtArea-CoTraInfo-area {
-        margin-bottom: 43px;
+        margin-bottom: 26px;
     }
 
     .index-access__txtArea-CoTraInfo {
-        font-size: 12px;
-        line-height: calc(35px / 2);
+        font-size: 14px;
+        line-height: 20px;
     }
 
     .index-access__txtArea-ttl2-area {
-        /* 基順線から下にはみ出てる分だけ修正 */
-        margin-top: -4px;
-        margin-bottom: calc(20px + 4px);
-    }
-
-    .index-access__txtArea-ttl2 {
-        font-size: 38px;
+        margin-bottom: 9px;
     }
 
     .index-access__txtArea-GrCoName-area {
-        margin-bottom: 0;
+        margin-bottom: 13px;
     }
 
     .index-access__txtArea-GrCoName {
         font-size: 18px;
-        line-height: 26px;
+        line-height: unset;
     }
 
     .index-access__txtArea-GrCoAdd {
-        font-size: 18px;
-        line-height: 26px;
+        font-size: 14px;
     }
 }
 
 @media screen and (max-width: 649px), screen and (max-height: 649px) {
     .index-access__img {
-        width: 293px;
-        height: 236.5px;
-        top: 0;
-        right: 2px;
-        bottom: 155.5px;
-        left: 0;
+        width: calc(592px / 2);
+        height: calc(477px / 2);
+        top: max(64px, 16vh);
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .index-access__txtArea {
-        bottom: 20px;
-        left: 20px;
-    }
-
-    .index-access__txtArea-ttl1-area {
-        margin-bottom: 10px;
-    }
-
-    .index-access__txtArea-ttl1 {
-        font-size: 19px;
+        top: unset;
+        bottom: max(24px, 8vh);
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .index-access__txtArea-CoName-area {
-        margin-bottom: 3.5px;
+        margin-bottom: calc(10px / 2);
     }
 
     .index-access__txtArea-CoName {
-        font-size: 9px;
-        line-height: 13px;
+        font-size: calc(18px / 2);
+        line-height: unset;
     }
 
     .index-access__txtArea-CoAdd-area {
-        margin-bottom: 10px;
+        margin-bottom: calc(14px / 2);
     }
 
     .index-access__txtArea-CoAdd {
-        font-size: 9px;
-        line-height: 13px;
+        font-size: calc(16px / 2);
+        line-height: calc((22px + 6px) / 2);
     }
 
     .index-access__txtArea-CoGMap-area {
-        margin-bottom: 9.885px;
+        margin-bottom: calc(14px / 2);
     }
 
     .index-access__txtArea-CoGMap {
-        width: 116.895px; /* 長方形の横幅 */
-        height: 16.115px; /* 長方形の縦幅 */
-        border-radius: 8.0575px; /* 縦の半分を指定して左右を半円に */
-        font-size: 8.5px;
+        width: calc(128px * 0.75);
+        height: calc(18px * 0.75);
     }
 
     .index-access__txtArea-CoTraInfo-area {
-        margin-bottom: 21.5px;
+        margin-bottom: calc(26px / 2);
     }
 
     .index-access__txtArea-CoTraInfo {
-        font-size: 6px;
-        line-height: calc(17.5px / 2);
+        font-size: calc(14px / 2);
+        line-height: calc(20px / 2);
     }
 
     .index-access__txtArea-ttl2-area {
-        /* 基順線から下にはみ出てる分だけ修正 */
-        margin-top: -2px;
-        margin-bottom: calc(10px + 2px);
-    }
-
-    .index-access__txtArea-ttl2 {
-        font-size: 19px;
+        margin-bottom: calc(9px / 2);
     }
 
     .index-access__txtArea-GrCoName-area {
-        margin-bottom: 0;
+        margin-bottom: calc(13px / 2);
     }
 
     .index-access__txtArea-GrCoName {
-        font-size: 9px;
-        line-height: 13px;
+        font-size: calc(18px / 2);
+        line-height: unset;
     }
 
     .index-access__txtArea-GrCoAdd {
-        font-size: 9px;
-        line-height: 13px;
+        font-size: calc(14px / 2);
     }
 }
 
