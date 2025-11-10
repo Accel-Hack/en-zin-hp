@@ -179,7 +179,7 @@ kv
 @media screen and (max-width: 649px), screen and (max-height: 649px) {
     .index-kv__img {
         width: calc(346px / 2);
-        height: calc(173px / 2);
+        height: calc(346px / 2);
         top: calc(3px / 2);
         right: 0;
         bottom: 0;
