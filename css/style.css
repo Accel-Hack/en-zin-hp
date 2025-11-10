@@ -485,14 +485,14 @@ access
     .index-access__img {
         width: calc(592px / 2);
         height: calc(477px / 2);
-        top: max(80px, 20vh);
+        top: max(64px, 16vh);
         left: 50%;
         transform: translateX(-50%);
     }
 
     .index-access__txtArea {
         top: unset;
-        bottom: max(24px, 12vh);
+        bottom: max(24px, 8vh);
         left: 50%;
         transform: translateX(-50%);
     }
