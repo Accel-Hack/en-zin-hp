@@ -308,9 +308,35 @@ work
 }
 
 @media screen and (orientation: portrait) {
+    .index-work__img {
+        width: 100vw;
+        height: 100vw;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .index-work__txt {
+        top: unset;
+        bottom: 162.5px;
+        transform: translateX(-50%);
+    }
 }
 
 @media screen and (max-width: 649px), screen and (max-height: 649px) {
+    .index-work__img {
+        width: 100vw;
+        height: 100vw;
+        top: calc(80px / 2);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .index-work__txt {
+        top: unset;
+        bottom: calc(162.5px / 2);
+        transform: translateX(-50%);
+    }
 }
 
 /*
