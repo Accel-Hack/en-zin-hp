@@ -179,22 +179,22 @@ kv
 
 @media screen and (orientation: portrait) {
     .index-kv__img {
-        width: 643.07px;
-        height: 643.07px;
-        top: 0;
+        width: 346px;
+        height: 346px;
+        top: 6px;
         right: 0;
-        bottom: 183.79px;
+        bottom: 0;
         left: 0;
     }
 }
 
 @media screen and (max-width: 649px), screen and (max-height: 649px) {
     .index-kv__img {
-        width: 320px;
-        height: 320px;
-        top: 0;
+        width: calc(346px / 2);
+        height: calc(173px / 2);
+        top: calc(3px / 2);
         right: 0;
-        bottom: 90px;
+        bottom: 0;
         left: 0;
     }
 }
