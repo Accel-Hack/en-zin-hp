@@ -323,9 +323,17 @@ work
     }
 
     .index-work__txt {
+        width: calc((267px * 2 + 55px) / 2);
+        height: calc((211px * 2 + 5px) / 2);
         top: unset;
         bottom: calc(162.5px / 2);
         transform: translateX(-50%);
+        row-gap: calc(5px / 2);
+    }
+
+    .index-work__txt-img {
+        width: calc(267px / 2);
+        height: calc(211px / 2);
     }
 }
 
