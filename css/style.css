@@ -415,14 +415,14 @@ access
 
 @media screen and (orientation: portrait) {
     .index-access__img {
-        top: 275px;
+        top: clamp(0px, calc(275 * 100vw / 1334), 275px);
         left: 50%;
         transform: translateX(-50%);
     }
 
     .index-access__txtArea {
         top: unset;
-        bottom: 149px;
+        bottom: clamp(0px, calc(149 * 100vw / 1334), 149px);
         left: 50%;
         transform: translateX(-50%);
     }
@@ -483,14 +483,16 @@ access
 
 @media screen and (max-width: 649px), screen and (max-height: 649px) {
     .index-access__img {
-        top: calc(275px / 2);
+        width: calc(592px / 2);
+        height: calc(477px / 2);
+        top: max(80px, 20vh);
         left: 50%;
         transform: translateX(-50%);
     }
 
     .index-access__txtArea {
         top: unset;
-        bottom: calc(149px / 2);
+        bottom: max(24px, 12vh);
         left: 50%;
         transform: translateX(-50%);
     }
