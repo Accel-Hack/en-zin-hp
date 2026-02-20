@@ -602,6 +602,11 @@ contact
         margin-top: 74px;
     }
 
+    .index-contact__button-img {
+        width: 180px;
+        height: 26px;
+    }
+
     .index-contact__copyright {
         font-size: 12px;
         bottom: 40px;
@@ -621,6 +626,11 @@ contact
 
     .index-contact__button {
         margin-top: 38px;
+    }
+
+    .index-contact__button-img {
+        width: unset;
+        height: unset;
     }
 
     .index-contact__copyright {
