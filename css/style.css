@@ -40,6 +40,12 @@
     height: 100vh;
 }
 
+@media screen and (orientation: portrait) {
+    .index-work__container {
+        height: 300vw;
+    }
+}
+
 @media screen and (orientation: landscape) and (max-height: 649px) {
     .index-kv__container,
     .index-about__container,
@@ -297,43 +303,65 @@ work
     row-gap: 5px;
 }
 
-@media screen and (orientation: portrait) {
+@media screen and (orientation: landscape) and (max-height: 649px) {
     .index-work__img {
-        width: 100vw;
-        height: 100vw;
-        top: 80px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .index-work__txt {
-        top: unset;
-        bottom: 162.5px;
-        transform: translateX(-50%);
-    }
-}
-
-@media screen and (max-width: 649px), screen and (max-height: 649px) {
-    .index-work__img {
-        width: 100vw;
-        height: 100vw;
-        top: max(calc(80px / 2), 12vh);
-        left: 50%;
-        transform: translateX(-50%);
+        width: calc(1001px / 2);
+        height: calc(1033px / 2);
+        transform: translate(calc(-50% + (-130px - 495px) / 4), calc(-50% + (12px + 274px) / 4));
     }
 
     .index-work__txt {
         width: calc((267px * 2 + 55px) / 2);
         height: calc((211px * 2 + 5px) / 2);
-        top: unset;
-        bottom: calc(162.5px / 2);
-        transform: translateX(-50%);
+        transform: translate(calc(-50% + (646px - 131px) / 4), calc(-50% + (151px - 187px) / 4));
         row-gap: calc(5px / 2);
     }
 
     .index-work__txt-img {
         width: calc(267px / 2);
         height: calc(211px / 2);
+    }
+}
+
+@media screen and (orientation: portrait) {
+    .index-work__img {
+        width: 100vw;
+        height: 100vw;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .index-work__txt {
+        width: min(497px, 68vw);
+        height: unset;
+        top: 90vw;
+        transform: translateX(-50%);
+        flex-direction: column;
+        flex-wrap: unset;
+        justify-content: unset;
+        row-gap: unset;
+    }
+}
+
+@media screen and (orientation: portrait) and (max-width: 649px) {
+    .index-work__img {
+        width: 100vw;
+        height: 100vw;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .index-work__txt {
+        width: min(248px, 68vw);
+        height: unset;
+        top: 90vw;
+        transform: translateX(-50%);
+        flex-direction: column;
+        flex-wrap: unset;
+        justify-content: unset;
+        row-gap: unset;
     }
 }
 
