@@ -6,28 +6,6 @@
     <title>en-zin</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <!-- EmailJSを読み込む -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <!-- EmailJSを初期化する -->
-    <script type="text/javascript">
-        (function () {
-            emailjs.init('veK33EMY2XA343et5');
-        })();
-    </script>
-    <!-- submitされたらメール送信 -->
-    <script type="text/javascript">
-        window.onload = function () {
-            document.getElementById('contact-form').addEventListener('submit', function (event) {
-                event.preventDefault();
-                emailjs.sendForm('service_xxpcvjp', 'template_3ll45wi', this)
-                    .then(function () {
-                        console.log('SUCCESS!');
-                    }, function (error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
 </head>
 <body>
 <div class="wrapper">
@@ -172,24 +150,10 @@
                             <h2 class="index-contact__txt">
                                 contact
                             </h2>
-                            <form class="index-contact__form" id="contact-form">
-                                <input type="hidden" name="contact_number">
-                                <label class="index-contact__form-name">お名前<br><input type="text" name="name"
-                                                                                         required></label>
-                                <label class="index-contact__form-furigana">お名前(フリガナ)<br><input type="text"
-                                                                                                       name="furigana"
-                                                                                                       required></label>
-                                <label class="index-contact__form-email">メールアドレス<br><input type="email"
-                                                                                                  name="email"
-                                                                                                  required></label>
-                                <label class="index-contact__form-company">会社名<br><input type="text"
-                                                                                            name="company"></label>
-                                <label class="index-contact__form-massage">お問い合わせ内容<br><textarea name="message"
-                                                                                                         required></textarea></label>
-                                <button type="submit" class="index-contact__form-button">
-                                    <img src="./img/contact/send.svg" alt="send">
-                                </button>
-                            </form>
+                            <textarea id="mail-body" class="index-contact__textarea" aria-label="お問い合わせ内容をご入力ください" placeholder="お問い合わせ内容をご入力ください"></textarea>
+                            <button id="send-button" class="index-contact__button" type="button">
+                                <img src="./img/contact/send.svg" class="index-contact__button-img" alt="send">
+                            </button>
                             <div class="index-contact__copyright">
                                 ©en-zin Inc. copyright
                             </div>
@@ -201,5 +165,18 @@
     </main>
 </div>
 <footer></footer>
+<script>
+    document.getElementById('send-button').addEventListener('click', function() {
+        const bodyContent = document.getElementById('mail-body').value;
+
+        // スパム対策：アドレスを分割
+        const u = "information";
+        const d = "2024110611004111298397.onamaeweb.jp";
+
+        window.location.href = "mailto:" + u + "@" + d +
+            "?subject=" + encodeURIComponent("お問い合わせ") +
+            "&body=" + encodeURIComponent(bodyContent);
+    });
+</script>
 </body>
 </html>
