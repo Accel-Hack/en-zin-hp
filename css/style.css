@@ -303,6 +303,61 @@ work
     row-gap: 5px;
 }
 
+.svg-responsive-wrapper {
+    container-type: inline-size;
+    width: 100%;
+    max-width: 267px;
+    aspect-ratio: 267 / 211;
+    position: relative;
+    color: #ffffff;
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.line-horizontal {
+    position: absolute;
+    top: 35.89%;  /* 75.75 / 211 */
+    left: 0;
+    width: 100%;
+    height: 0.5px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.line-vertical {
+    position: absolute;
+    top: 16.58%;   /* 35 / 211 */
+    left: 8.89%;   /* 23.75 / 267 */
+    width: 0.5px;
+    height: 83.17%; /* 175.5 / 211 */
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.text-title, .text-list {
+    text-shadow: 0px 0.5cqi 0.5cqi rgba(0, 0, 0, 0.16);
+}
+
+.text-title {
+    position: absolute;
+    left: 16.85%;
+    top: 17%;
+    font-size: 9.73cqi; /* 枠の幅が267pxの時、ちょうど26pxになる計算 */
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.02em;
+}
+
+.text-list {
+    position: absolute;
+    left: 16.85%;
+    top: 45.49%;
+    font-size: 4.11cqi; /* 枠の幅が267pxの時、ちょうど11pxになる計算 */
+    font-weight: 300;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
 @media screen and (orientation: landscape) and (max-height: 649px) {
     .index-work__img {
         width: calc(1001px / 2);
@@ -320,6 +375,10 @@ work
     .index-work__txt-img {
         width: calc(267px / 2);
         height: calc(211px / 2);
+    }
+
+    .svg-responsive-wrapper {
+        max-width: calc(267px / 2);
     }
 }
 
@@ -342,6 +401,10 @@ work
         justify-content: unset;
         row-gap: unset;
     }
+
+    .svg-responsive-wrapper {
+        max-width: min(497px, 68vw);
+    }
 }
 
 @media screen and (orientation: portrait) and (max-width: 649px) {
@@ -362,6 +425,10 @@ work
         flex-wrap: unset;
         justify-content: unset;
         row-gap: unset;
+    }
+
+    .svg-responsive-wrapper {
+        max-width: min(248px, 68vw);
     }
 }
 
