@@ -373,11 +373,6 @@ work
         row-gap: calc(5px / 2);
     }
 
-    .index-work__txt-img {
-        width: calc(267px / 2);
-        height: calc(211px / 2);
-    }
-
     .index-work__card {
         max-width: calc(267px / 2);
     }
