@@ -381,6 +381,11 @@ work
     .svg-responsive-wrapper {
         max-width: calc(267px / 2);
     }
+
+    .line-horizontal, .line-vertical {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
 }
 
 @media screen and (orientation: portrait) {
@@ -406,6 +411,11 @@ work
     .svg-responsive-wrapper {
         max-width: min(497px, 68vw);
     }
+
+    .line-horizontal, .line-vertical {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
 }
 
 @media screen and (orientation: portrait) and (max-width: 649px) {
@@ -430,6 +440,11 @@ work
 
     .svg-responsive-wrapper {
         max-width: min(248px, 68vw);
+    }
+
+    .line-horizontal, .line-vertical {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.5);
     }
 }
 
