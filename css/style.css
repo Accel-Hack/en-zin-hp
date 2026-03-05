@@ -353,10 +353,10 @@ work
     position: absolute;
     left: 16.85%;
     top: 45.49%;
-    font-size: 4.11cqi; /* 枠の幅が267pxの時、ちょうど11pxになる計算 */
+    font-size: 5.06cqi; /* 枠の幅が267pxの時、ちょうど13.5pxになる計算 */
     font-weight: 300;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
 }
 
 @media screen and (orientation: landscape) and (max-height: 649px) {
